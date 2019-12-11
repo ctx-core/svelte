@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ctx-core/ctx-core.git"
+		"url": "https://github.com/ctx-core/svelte/issues"
 	},
 	"keywords": [
 		"ctx-core",
@@ -20,9 +20,9 @@
 	"author": "Brian Takita",
 	"license": "Apache-2.0",
 	"bugs": {
-		"url": "https://github.com/ctx-core/ctx-core/issues"
+		"url": "https://github.com/ctx-core/svelte/issues"
 	},
-	"homepage": "https://github.com/ctx-core/ctx-core#readme",
+	"homepage": "https://github.com/ctx-core/svelte#readme",
 	"publishConfig": {
 		"access": "public"
 	},
