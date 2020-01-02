@@ -2,3 +2,5 @@
 tsconfig.tsbuildinfo
 preprocess.js
 node_modules
+
+lib.js

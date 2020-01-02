@@ -2,6 +2,9 @@
 	"name": "@ctx-core/svelte",
 	"version": "5.2.8",
 	"description": "ctx-core svelte",
+	"main": "lib.js",
+	"module": "lib.js",
+	"types": "lib.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
