@@ -2,6 +2,7 @@
 	"name": "@ctx-core/svelte",
 	"version": "5.3.14",
 	"description": "ctx-core svelte",
+	"type": "module",
 	"main": "lib.js",
 	"module": "lib.js",
 	"types": "lib.ts",
