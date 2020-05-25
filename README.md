@@ -12,7 +12,7 @@ npm i @ctx-core/svelte
 
 ```javascript
 // rollup.config.js
-const { _proprocess } = require('@ctx-core/svelte/preprocess')
+import { _proprocess } from '@ctx-core/svelte/preprocess'
 const preprocess = _proprocess([
 	// preprocess object 1,
 	// preprocess object 2,
