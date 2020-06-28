@@ -1,5 +1,5 @@
 import { getContext, setContext } from 'svelte'
-export function llContext(key, _val) {
+export function llContext(key, _val: () => any) {
 	let val = getContext(key)
 	if (val != null) return val
 	val = _val()
@@ -8,3 +8,4 @@ export function llContext(key, _val) {
 }
 export const _store_ctx__llContext = ()=>
 	llContext('store_ctx', ()=>({}))
+export type EventDispatcher = (type: string, detail?: any) => void
