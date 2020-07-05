@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "5.3.20",
+	"version": "5.3.21",
 	"description": "ctx-core svelte",
 	"main": "lib.js",
 	"module": "lib.js",
