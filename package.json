@@ -2,9 +2,9 @@
 	"name": "@ctx-core/svelte",
 	"version": "5.3.26",
 	"description": "ctx-core svelte",
-	"main": "index.js",
-	"module": "index.js",
-	"types": "index.ts",
+	"main": "./index.js",
+	"module": "./index.js",
+	"types": "./index.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
