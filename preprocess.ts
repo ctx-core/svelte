@@ -1,15 +1,16 @@
-import { PreprocessorGroup } from 'svelte/types/compiler/preprocess'
 import { readFileSync, existsSync } from 'fs'
 import { dirname, basename, join } from 'path'
-export function compose__a1__preprocess(a1__preprocess):PreprocessorGroup {
+export type PreprocessOptions = Record<string, (...args:any[])=>void>
+export function _preprocess(a1__preprocess):PreprocessOptions {
 	return {
-		markup: compose__key__a1__preprocess('markup', a1__preprocess),
-		script: compose__key__a1__preprocess('script', a1__preprocess),
-		style: compose__key__a1__preprocess('style', a1__preprocess),
+		markup: compose_preprocess_a1_key('markup', a1__preprocess),
+		script: compose_preprocess_a1_key('script', a1__preprocess),
+		style: compose_preprocess_a1_key('style', a1__preprocess),
 	}
 }
-export const _preprocess = compose__a1__preprocess
-function compose__key__a1__preprocess(key, a1__preprocess) {
+export const compose_preprocess_a1 = _preprocess
+export const compose__a1__preprocess = _preprocess
+function compose_preprocess_a1_key(key, a1__preprocess) {
 	return async (opts__preprocess = {})=>{
 		for (let i = 0; i < a1__preprocess.length; i++) {
 			const fn = a1__preprocess[i][key]
@@ -18,7 +19,7 @@ function compose__key__a1__preprocess(key, a1__preprocess) {
 		}
 	}
 }
-export function _preprocess__src__compiled() {
+export function _preprocess_compiled_src() {
 	return {
 		style: _fn('css'),
 		script: _fn('js'),
@@ -46,3 +47,4 @@ export function _preprocess__src__compiled() {
 		}
 	}
 }
+export const _preprocess__src__compiled = _preprocess_compiled_src
