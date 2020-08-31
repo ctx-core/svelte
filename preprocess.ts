@@ -1,21 +1,21 @@
 import { readFileSync, existsSync } from 'fs'
 import { dirname, basename, join } from 'path'
 export type PreprocessOptions = Record<string, (...args:any[])=>void>
-export function _preprocess(a1__preprocess):PreprocessOptions {
+export function _preprocess(preprocess_a1):PreprocessOptions {
 	return {
-		markup: compose_preprocess_a1_key('markup', a1__preprocess),
-		script: compose_preprocess_a1_key('script', a1__preprocess),
-		style: compose_preprocess_a1_key('style', a1__preprocess),
+		markup: compose_preprocess_a1_key('markup', preprocess_a1),
+		script: compose_preprocess_a1_key('script', preprocess_a1),
+		style: compose_preprocess_a1_key('style', preprocess_a1),
 	}
 }
 export const compose_preprocess_a1 = _preprocess
 export const compose__a1__preprocess = _preprocess
-function compose_preprocess_a1_key(key, a1__preprocess) {
-	return async (opts__preprocess = {})=>{
-		for (let i = 0; i < a1__preprocess.length; i++) {
-			const fn = a1__preprocess[i][key]
-			const ctx__code__map = fn && await fn(opts__preprocess)
-			if (ctx__code__map) return ctx__code__map
+function compose_preprocess_a1_key(key, preprocess_a1) {
+	return async (preprocess_opts = {})=>{
+		for (let i = 0; i < preprocess_a1.length; i++) {
+			const fn = preprocess_a1[i][key]
+			const map_code_ctx = fn && await fn(preprocess_opts)
+			if (map_code_ctx) return map_code_ctx
 		}
 	}
 }
@@ -28,17 +28,17 @@ export function _preprocess_compiled_src() {
 		return ({ content = '', attributes, filename })=>{
 			const { src } = attributes
 			if (src) {
-				const filename__base = join(dirname(filename), src)
-				const filename__full =
-					existsSync(`${filename__base}.${default_ext}`)
-					? `${filename__base}.${default_ext}`
-					: existsSync(`${basename(filename__base)}.${default_ext}`)
-						? `${basename(filename__base)}.${default_ext}`
-						: existsSync(filename__base)
-							? filename__base
+				const base_filename = join(dirname(filename), src)
+				const full_filename =
+					existsSync(`${base_filename}.${default_ext}`)
+					? `${base_filename}.${default_ext}`
+					: existsSync(`${basename(base_filename)}.${default_ext}`)
+						? `${basename(base_filename)}.${default_ext}`
+						: existsSync(base_filename)
+							? base_filename
 							: null
-				if (!filename__full) return
-				content = `${readFileSync(filename__full).toString()}\n${content}`
+				if (!full_filename) return
+				content = `${readFileSync(full_filename).toString()}\n${content}`
 				return {
 					code: content,
 					map: null,

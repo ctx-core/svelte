@@ -1,5 +1,5 @@
 export declare type PreprocessOptions = Record<string, (...args: any[]) => void>;
-export declare function _preprocess(a1__preprocess: any): PreprocessOptions;
+export declare function _preprocess(preprocess_a1: any): PreprocessOptions;
 export declare const compose_preprocess_a1: typeof _preprocess;
 export declare const compose__a1__preprocess: typeof _preprocess;
 export declare function _preprocess_compiled_src(): {
