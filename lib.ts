@@ -8,4 +8,4 @@ export function llContext(key, _val: () => any) {
 }
 export const _store_ctx__llContext = ()=>
 	llContext('store_ctx', ()=>({}))
-export type EventDispatcher = (type: string, detail?: any) => void
+export type EventDispatcher = (type: string, detail?: unknown) => void

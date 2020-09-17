@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from 'fs'
 import { dirname, basename, join } from 'path'
-export type PreprocessOptions = Record<string, (...args:any[])=>void>
+export type PreprocessOptions = Record<string, (...args:unknown[])=>void>
 export function _preprocess(preprocess_a1):PreprocessOptions {
 	return {
 		markup: compose_preprocess_a1_key('markup', preprocess_a1),
