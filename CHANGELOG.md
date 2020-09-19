@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 6.0.0
+
+### Major Changes
+
+- Typescript strict checking
+
 ## 5.3.39
 
 ### Patch Changes

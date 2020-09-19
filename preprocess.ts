@@ -1,15 +1,24 @@
 import { readFileSync, existsSync } from 'fs'
 import { dirname, basename, join } from 'path'
-export type PreprocessOptions = Record<string, (...args:unknown[])=>void>
-export function _preprocess(preprocess_a1):PreprocessOptions {
+export function _preprocess(preprocess_a1):preprocess_type {
 	return {
 		markup: compose_preprocess_a1_key('markup', preprocess_a1),
 		script: compose_preprocess_a1_key('script', preprocess_a1),
 		style: compose_preprocess_a1_key('style', preprocess_a1),
-	}
+	} as preprocess_type
 }
 export const compose_preprocess_a1 = _preprocess
 export const compose__a1__preprocess = _preprocess
+export type map_code_ctx_type = {
+	code: string | Buffer
+	map?: string
+}
+export type preprocess_type = {
+	markup(preprocess_opts: object): Promise<map_code_ctx_type>
+	script(preprocess_opts: object): Promise<map_code_ctx_type>
+	style(preprocess_opts: object): Promise<map_code_ctx_type>
+}
+export type PreprocessOptions = preprocess_type
 function compose_preprocess_a1_key(key, preprocess_a1) {
 	return async (preprocess_opts = {})=>{
 		for (let i = 0; i < preprocess_a1.length; i++) {
