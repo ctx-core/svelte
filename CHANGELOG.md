@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 6.0.1
+
+### Patch Changes
+
+- version bump to sync with npm
+
 ## 6.0.0
 
 ### Major Changes
