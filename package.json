@@ -1,39 +1,38 @@
 {
-  "name": "@ctx-core/svelte",
-  "version": "6.0.0",
-  "description": "ctx-core svelte",
-  "keywords": [
-    "ctx-core",
-    "svelte"
-  ],
-  "homepage": "https://github.com/ctx-core/svelte#readme",
-  "bugs": {
-    "url": "https://github.com/ctx-core/svelte/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ctx-core/svelte/issues"
-  },
-  "license": "Apache-2.0",
-  "author": "Brian Takita",
-  "main": "./index.js",
-  "module": "./index.js",
-  "types": "./index.ts",
-  "scripts": {
-    "build": "npm run clean && npm run compile",
-    "clean": "rm -f tsconfig.tsbuildinfo",
-    "compile": "./node_modules/.bin/tsc -b",
-    "exec": "$@",
-    "prepublishOnly": "npm run compile"
-  },
-  "dependencies": {
-    "svelte": "~3.25.1"
-  },
-  "devDependencies": {
-    "typescript": "^4.0.3"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "eb0152cc232e2fdebe7542d245fb95cba801f334"
+	"name": "@ctx-core/svelte",
+	"version": "6.0.0",
+	"description": "ctx-core svelte",
+	"keywords": [
+		"ctx-core",
+		"svelte"
+	],
+	"homepage": "https://github.com/ctx-core/svelte#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/svelte/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/svelte/issues"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
+	"main": "./index.js",
+	"module": "./index.js",
+	"types": "./index.ts",
+	"scripts": {
+		"build": "npm run clean && npm run compile",
+		"clean": "rm -f tsconfig.tsbuildinfo",
+		"compile": "./node_modules/.bin/tsc -b",
+		"exec": "$@",
+		"prepublishOnly": "npm run compile"
+	},
+	"dependencies": {
+		"svelte": "~3.25.1"
+	},
+	"devDependencies": {
+		"typescript": "^4.0.3"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
