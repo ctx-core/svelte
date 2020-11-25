@@ -9,14 +9,14 @@ export function _preprocess(preprocess_a1):preprocess_type {
 }
 export const compose_preprocess_a1 = _preprocess
 export const compose__a1__preprocess = _preprocess
-export type map_code_ctx_type = {
-	code: string | Buffer
-	map?: string
+export interface map_code_ctx_type {
+	code:string|Buffer
+	map?:string
 }
-export type preprocess_type = {
-	markup(preprocess_opts: object): Promise<map_code_ctx_type>
-	script(preprocess_opts: object): Promise<map_code_ctx_type>
-	style(preprocess_opts: object): Promise<map_code_ctx_type>
+export interface preprocess_type {
+	markup(preprocess_opts:object):Promise<map_code_ctx_type>
+	script(preprocess_opts:object):Promise<map_code_ctx_type>
+	style(preprocess_opts:object):Promise<map_code_ctx_type>
 }
 export type PreprocessOptions = preprocess_type
 function compose_preprocess_a1_key(key, preprocess_a1) {
