@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 6.1.0
+
+### Minor Changes
+
+- interface instead of type
+
 ## 6.0.13
 
 ### Patch Changes
