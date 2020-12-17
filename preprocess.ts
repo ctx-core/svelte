@@ -55,7 +55,7 @@ export function _preprocess_compiled_src() {
 		}
 	}
 }
+export type PreprocessOptions = preprocess_type
 export {
-	preprocess_type as PreprocessOptions,
 	_preprocess_compiled_src as _preprocess__src__compiled,
 }

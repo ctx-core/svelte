@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 6.1.5
+
+### Patch Changes
+
+- fix: export alias type with "isolatedModules": true
+
 ## 6.1.4
 
 ### Patch Changes
