@@ -29,4 +29,5 @@ export declare function _preprocess_compiled_src(): {
         map: null;
     } | undefined;
 };
-export { preprocess_type as PreprocessOptions, _preprocess_compiled_src as _preprocess__src__compiled, };
+export declare type PreprocessOptions = preprocess_type;
+export { _preprocess_compiled_src as _preprocess__src__compiled, };
