@@ -18,7 +18,6 @@ export interface preprocess_type {
 	script(preprocess_opts:object):Promise<map_code_ctx_type>
 	style(preprocess_opts:object):Promise<map_code_ctx_type>
 }
-export type PreprocessOptions = preprocess_type
 function compose_preprocess_a1_key(key, preprocess_a1) {
 	return async (preprocess_opts = {})=>{
 		for (let i = 0; i < preprocess_a1.length; i++) {
@@ -56,4 +55,7 @@ export function _preprocess_compiled_src() {
 		}
 	}
 }
-export const _preprocess__src__compiled = _preprocess_compiled_src
+export {
+	preprocess_type as PreprocessOptions,
+	_preprocess_compiled_src as _preprocess__src__compiled,
+}

@@ -11,7 +11,6 @@ export interface preprocess_type {
     script(preprocess_opts: object): Promise<map_code_ctx_type>;
     style(preprocess_opts: object): Promise<map_code_ctx_type>;
 }
-export declare type PreprocessOptions = preprocess_type;
 export declare function _preprocess_compiled_src(): {
     style: ({ content, attributes, filename }: {
         content?: string | undefined;
@@ -30,4 +29,4 @@ export declare function _preprocess_compiled_src(): {
         map: null;
     } | undefined;
 };
-export declare const _preprocess__src__compiled: typeof _preprocess_compiled_src;
+export { preprocess_type as PreprocessOptions, _preprocess_compiled_src as _preprocess__src__compiled, };
