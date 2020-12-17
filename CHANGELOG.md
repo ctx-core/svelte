@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 6.1.4
+
+### Patch Changes
+
+- using export as instead of export const
+
 ## 6.1.3
 
 ### Patch Changes
