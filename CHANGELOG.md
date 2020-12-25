@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 6.1.7
+
+### Patch Changes
+
+- - .rush
+
 ## 6.1.6
 
 ### Patch Changes
