@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.1.0
+
+### Minor Changes
+
+- build: node,browser
+
 ## 7.0.0
 
 ### Major Changes
