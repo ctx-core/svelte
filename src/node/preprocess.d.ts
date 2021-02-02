@@ -1,7 +1,5 @@
 /// <reference types="node" />
 export declare function _preprocess(preprocess_a1: any): preprocess_type;
-export declare const compose_preprocess_a1: typeof _preprocess;
-export declare const compose__a1__preprocess: typeof _preprocess;
 export interface map_code_ctx_type {
     code: string | Buffer;
     map?: string;
@@ -30,4 +28,4 @@ export declare function _preprocess_compiled_src(): {
     } | undefined;
 };
 export declare type PreprocessOptions = preprocess_type;
-export { _preprocess_compiled_src as _preprocess__src__compiled, };
+export { _preprocess as compose_preprocess_a1_key, _preprocess as compose__a1__preprocess, _preprocess_compiled_src as _preprocess__src__compiled, };

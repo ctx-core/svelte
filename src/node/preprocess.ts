@@ -7,8 +7,6 @@ export function _preprocess(preprocess_a1):preprocess_type {
 		style: compose_preprocess_a1_key('style', preprocess_a1),
 	} as preprocess_type
 }
-export const compose_preprocess_a1 = _preprocess
-export const compose__a1__preprocess = _preprocess
 export interface map_code_ctx_type {
 	code:string|Buffer
 	map?:string
@@ -57,5 +55,7 @@ export function _preprocess_compiled_src() {
 }
 export type PreprocessOptions = preprocess_type
 export {
+	_preprocess as compose_preprocess_a1_key,
+	_preprocess as compose__a1__preprocess,
 	_preprocess_compiled_src as _preprocess__src__compiled,
 }

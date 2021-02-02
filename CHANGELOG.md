@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.1.1
+
+### Patch Changes
+
+- \_preprocess aliases: export as
+
 ## 7.1.0
 
 ### Minor Changes
