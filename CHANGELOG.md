@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.1.7
+
+### Patch Changes
+
+- version bump
+
 ## 7.1.6
 
 ### Patch Changes
