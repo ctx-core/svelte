@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.2.0
+
+### Minor Changes
+
+- \*\_T type naming
+
 ## 7.1.7
 
 ### Patch Changes
