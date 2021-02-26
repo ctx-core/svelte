@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.2.2
+
+### Patch Changes
+
+- svelte: 3.33.0 -> 3.34.0
+
 ## 7.2.1
 
 ### Patch Changes
