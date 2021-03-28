@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "7.2.4",
+	"version": "7.2.5",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -23,7 +23,7 @@
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
-		"compile": "./node_modules/.bin/tsc -b",
+		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
 		"prepublishOnly": "npm run compile"
 	},

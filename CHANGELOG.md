@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.2.5
+
+### Patch Changes
+
+- fix: npm run compile: tsc -b .
+
 ## 7.2.4
 
 ### Patch Changes
