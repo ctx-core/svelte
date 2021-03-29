@@ -3,3 +3,4 @@ tsconfig.tsbuildinfo
 node_modules
 *.js
 COMMIT_EDITMSG
+~/.npm
