@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.2.6
+
+### Patch Changes
+
+- fix: npm publish: https://github.com/npm/cli/issues/2834
+
 ## 7.2.5
 
 ### Patch Changes
