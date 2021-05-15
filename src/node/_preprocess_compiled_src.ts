@@ -6,7 +6,7 @@ export function _preprocess_compiled_src():preprocess_compiled_src_I {
 		script: _fn('js'),
 	}
 	function _fn(default_ext:string) {
-		return ({ content = '', attributes, filename })=>{
+		return ({ content = '', attributes, filename }:preprocess_compiled_src_fn2_params_I)=>{
 			const { src } = attributes
 			if (src) {
 				const base_filename = join(dirname(filename), src)
@@ -28,7 +28,7 @@ export function _preprocess_compiled_src():preprocess_compiled_src_I {
 		}
 	}
 }
-export interface preprocess_compiled_src_fn2_opts_I {
+export interface preprocess_compiled_src_fn2_params_I {
 	content:string
 	attributes:{ src?:string }
 	filename:string
@@ -38,7 +38,7 @@ export interface preprocess_compiled_src_fn2_r_I {
 	map:null
 }
 export type preprocess_compiled_src_fn2_T =
-	(opts:preprocess_compiled_src_fn2_opts_I)=>preprocess_compiled_src_fn2_r_I|void
+	(params:preprocess_compiled_src_fn2_params_I)=>preprocess_compiled_src_fn2_r_I|void
 export type preprocess_compiled_src_fn_T =
 	(default_ext:string)=>preprocess_compiled_src_fn2_T
 export interface preprocess_compiled_src_I {

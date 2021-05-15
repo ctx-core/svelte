@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.3.0
+
+### Minor Changes
+
+- "noImplicitAny": true
+
 ## 7.2.13
 
 ### Patch Changes

@@ -1,5 +1,5 @@
 /// <reference types="node" />
-export declare function _preprocess(preprocess_a1: any): preprocess_T;
+export declare function _preprocess(preprocess_a1: Partial<preprocess_T>[]): preprocess_T;
 export interface map_code_ctx_T {
     code: string | Buffer;
     map?: string;
