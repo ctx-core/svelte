@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.3.1
+
+### Patch Changes
+
+- fix: target: 2018: nodejs compatability
+
 ## 7.3.0
 
 ### Minor Changes
