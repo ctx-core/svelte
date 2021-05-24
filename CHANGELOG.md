@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.4.1
+
+### Patch Changes
+
+- .gitignore: - \*.js
+
 ## 7.4.0
 
 ### Minor Changes
