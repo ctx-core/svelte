@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.4.0
+
+### Minor Changes
+
+- dist,types directory: addressing typescript build issues
+
 ## 7.3.3
 
 ### Patch Changes
