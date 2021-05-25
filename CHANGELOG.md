@@ -1,5 +1,17 @@
 # @ctx-core/svelte
 
+## 7.5.0
+
+### Minor Changes
+
+- fix tsc build directory issues
+
+## 7.4.2
+
+### Patch Changes
+
+- cleanup src: - _.js,_.d.ts
+
 ## 7.4.1
 
 ### Patch Changes

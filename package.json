@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "7.4.1",
+	"version": "7.5.0",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -18,7 +18,7 @@
 	"author": "Brian Takita",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
-	"types": "./types/index.d.ts",
+	"types": "./dist/index.d.ts",
 	"browser": "./src/browser/index.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
