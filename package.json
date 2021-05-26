@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "7.5.0",
+	"version": "7.5.1",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -19,7 +19,7 @@
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"browser": "./src/browser/index.ts",
+	"browser": "./dist/browser/index.js",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
