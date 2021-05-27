@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 7.5.2
+
+### Patch Changes
+
+- update dependencies
+
 ## 7.5.1
 
 ### Patch Changes
