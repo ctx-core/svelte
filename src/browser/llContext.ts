@@ -1,8 +1,8 @@
 import { getContext, setContext } from 'svelte'
-export function llContext(key:string, _val:()=>any) {
+export function llContext(key:string, val_:()=>any) {
 	let val = getContext(key)
 	if (val != null) return val
-	val = _val()
+	val = val_()
 	setContext(key, val)
 	return val
 }

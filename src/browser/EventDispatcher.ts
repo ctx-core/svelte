@@ -1,1 +1,1 @@
-export type EventDispatcher = (type: string, detail?: unknown) => void
+export type EventDispatcher = (type:string, detail?:unknown)=>void

@@ -1,11 +1,11 @@
-export function _preprocess(preprocess_a1:Partial<preprocess_T>[]):preprocess_T {
+export function preprocess_(preprocess_a1:Partial<preprocess_T>[]):preprocess_T {
 	return {
-		markup: compose_preprocess_a1_key('markup', preprocess_a1),
-		script: compose_preprocess_a1_key('script', preprocess_a1),
-		style: compose_preprocess_a1_key('style', preprocess_a1),
+		markup: compose_preprocess_a_key('markup', preprocess_a1),
+		script: compose_preprocess_a_key('script', preprocess_a1),
+		style: compose_preprocess_a_key('style', preprocess_a1),
 	} as preprocess_T
 }
-function compose_preprocess_a1_key(key:keyof preprocess_T, preprocess_a1:Partial<preprocess_T>[]) {
+function compose_preprocess_a_key(key:keyof preprocess_T, preprocess_a1:Partial<preprocess_T>[]) {
 	return async (preprocess_opts = {})=>{
 		for (let i = 0; i < preprocess_a1.length; i++) {
 			const fn = preprocess_a1[i][key]
@@ -27,6 +27,7 @@ export interface preprocess_T {
 export type preprocess_type = preprocess_T
 export type PreprocessOptions = preprocess_T
 export {
-	_preprocess as compose_preprocess_a1_key,
-	_preprocess as compose__a1__preprocess,
+	preprocess_ as _preprocess,
+	preprocess_ as compose_preprocess_a1_key,
+	preprocess_ as compose__a1__preprocess,
 }

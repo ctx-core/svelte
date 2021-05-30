@@ -1,11 +1,11 @@
 import { readFileSync, existsSync } from 'fs'
 import { dirname, basename, join } from 'path'
-export function _preprocess_compiled_src():preprocess_compiled_src_I {
+export function preprocess_compiled_src_():preprocess_compiled_src_I {
 	return {
-		style: _fn('css'),
-		script: _fn('js'),
+		style: fn_('css'),
+		script: fn_('js'),
 	}
-	function _fn(default_ext:string) {
+	function fn_(default_ext:string) {
 		return ({ content = '', attributes, filename }:preprocess_compiled_src_fn2_params_I)=>{
 			const { src } = attributes
 			if (src) {
@@ -46,5 +46,6 @@ export interface preprocess_compiled_src_I {
 	script:preprocess_compiled_src_fn2_T
 }
 export {
-	_preprocess_compiled_src as _preprocess__src__compiled,
+	preprocess_compiled_src_ as _preprocess_compiled_src,
+	preprocess_compiled_src_ as _preprocess__src__compiled,
 }
