@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "8.0.0",
+	"version": "8.0.1",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -22,7 +22,7 @@
 	"browser": "./dist/browser/index.js",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
-		"clean": "rm -f tsconfig.tsbuildinfo",
+		"clean": "rm -f tsconfig.tsbuildinfo && rm -f dist/**/*.js && rm -f dist/**/*.d.ts && rm -f dist/**/*.map",
 		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
 		"prepublishOnly": "npm run compile"
