@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 8.0.2
+
+### Patch Changes
+
+- version bump: run build
+
 ## 8.0.1
 
 ### Patch Changes
