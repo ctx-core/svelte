@@ -1,14 +1,14 @@
-export function preprocess_(preprocess_a1:Partial<preprocess_T>[]):preprocess_T {
+export function preprocess_(preprocess_a:Partial<preprocess_T>[]):preprocess_T {
 	return {
-		markup: compose_preprocess_a_key('markup', preprocess_a1),
-		script: compose_preprocess_a_key('script', preprocess_a1),
-		style: compose_preprocess_a_key('style', preprocess_a1),
+		markup: compose_preprocess_a_key('markup', preprocess_a),
+		script: compose_preprocess_a_key('script', preprocess_a),
+		style: compose_preprocess_a_key('style', preprocess_a),
 	} as preprocess_T
 }
-function compose_preprocess_a_key(key:keyof preprocess_T, preprocess_a1:Partial<preprocess_T>[]) {
+function compose_preprocess_a_key(key:keyof preprocess_T, preprocess_a:Partial<preprocess_T>[]) {
 	return async (preprocess_opts = {})=>{
-		for (let i = 0; i < preprocess_a1.length; i++) {
-			const fn = preprocess_a1[i][key]
+		for (let i = 0; i < preprocess_a.length; i++) {
+			const fn = preprocess_a[i][key]
 			const map_code_ctx = fn && await fn(preprocess_opts)
 			if (map_code_ctx) return map_code_ctx
 		}

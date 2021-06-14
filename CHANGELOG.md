@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 9.0.0
+
+### Major Changes
+
+- move from dist to src directory
+
 ## 8.0.2
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "8.0.2",
+	"version": "9.0.0",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -16,9 +16,9 @@
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
-	"main": "./dist/index.js",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"main": "./src/index.js",
+	"module": "./src/index.js",
+	"types": "./src/index.d.ts",
 	"browser": "./dist/browser/index.js",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
