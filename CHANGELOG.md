@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 9.0.1
+
+### Patch Changes
+
+- fix: browser: load "./src/browser/index.js"
+
 ## 9.0.0
 
 ### Major Changes
