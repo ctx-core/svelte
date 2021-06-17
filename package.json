@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "9.0.1",
+	"version": "9.0.2",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -31,7 +31,7 @@
 		"svelte": "3.38.2"
 	},
 	"devDependencies": {
-		"typescript": "^4.3.2"
+		"typescript": "^4.3.3"
 	},
 	"publishConfig": {
 		"access": "public",
