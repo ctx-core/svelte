@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 9.0.6
+
+### Patch Changes
+
+- "prepare": "npm run clean && npm run compile"
+
 ## 9.0.5
 
 ### Patch Changes
