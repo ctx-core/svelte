@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "9.0.4",
+	"version": "9.0.5",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -25,7 +25,7 @@
 		"clean": "rm -f tsconfig.tsbuildinfo && rm -f src/**/*.js && rm -f src/**/*.d.ts && rm -f src/**/*.map",
 		"compile": "./node_modules/.bin/tsc -b .",
 		"exec": "$@",
-		"prepublishOnly": "npm run compile"
+		"prepare": "npm run build"
 	},
 	"dependencies": {
 		"svelte": "3.38.2"
