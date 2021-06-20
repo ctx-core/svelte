@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 9.0.4
+
+### Patch Changes
+
+- fix: npm run clean
+
 ## 9.0.3
 
 ### Patch Changes
