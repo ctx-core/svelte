@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "9.0.8",
+	"version": "9.0.9",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -28,7 +28,7 @@
 		"prepublishOnly": "npm run clean && npm run compile"
 	},
 	"dependencies": {
-		"svelte": "3.38.2"
+		"svelte": "3.38.3"
 	},
 	"devDependencies": {
 		"typescript": "^4.3.4"
