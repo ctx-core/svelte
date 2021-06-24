@@ -25,6 +25,7 @@ export function preprocess_compiled_src_():preprocess_compiled_src_I {
 					map: null,
 				}
 			}
+			return
 		}
 	}
 }
