@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 9.0.11
+
+### Patch Changes
+
+- dist directory
+
 ## 9.0.10
 
 ### Patch Changes
