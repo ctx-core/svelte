@@ -1,29 +1,53 @@
-export function preprocess_(preprocess_a:Partial<preprocess_T>[]):preprocess_T {
+import type { MarkupPreprocessor, Preprocessor, PreprocessorGroup, Processed } from 'svelte/types/compiler/preprocess'
+export function preprocess_(preprocess_a:PreprocessorGroup[]):preprocess_T {
 	return {
 		markup: compose_preprocess_a_key('markup', preprocess_a),
 		script: compose_preprocess_a_key('script', preprocess_a),
 		style: compose_preprocess_a_key('style', preprocess_a),
 	} as preprocess_T
 }
-function compose_preprocess_a_key(key:keyof preprocess_T, preprocess_a:Partial<preprocess_T>[]) {
-	return async (preprocess_opts = {})=>{
+function compose_preprocess_a_key(
+	key:keyof preprocess_T, preprocess_a:PreprocessorGroup[]
+):compose_preprocess_a_key_return_T {
+	return async (preprocess_opts:(MarkupPreprocessor_options_T|Preprocessor_options_T)):Promise<Processed|undefined>=>{
 		for (let i = 0; i < preprocess_a.length; i++) {
 			const fn = preprocess_a[i][key]
-			const map_code_ctx = fn && await fn(preprocess_opts)
-			if (map_code_ctx) return map_code_ctx
+			if (fn) {
+				let processed:Processed|undefined
+				if (key === 'markup') {
+					processed = await (fn as MarkupPreprocessor)(preprocess_opts as MarkupPreprocessor_options_T)
+				} else {
+					processed = await (fn as Preprocessor)(preprocess_opts as Preprocessor_options_T)
+				}
+				if (processed) return processed
+			}
 		}
 		return
 	}
 }
-export interface map_code_ctx_T {
-	code:string|Buffer
-	map?:string
+export type compose_preprocess_a_key_return_T =
+	(preprocess_opts:(MarkupPreprocessor_options_T|Preprocessor_options_T))=>
+		Promise<Processed|undefined>
+export interface MarkupPreprocessor_options_T {
+	content:string;
+	filename:string;
 }
-export type map_code_ctx_type = map_code_ctx_T
+export interface Preprocessor_options_T {
+	/**
+	 * The script/style tag content
+	 */
+	content:string;
+	attributes:Record<string, string|boolean>;
+	/**
+	 * The whole Svelte file content
+	 */
+	markup:string;
+	filename?:string;
+}
 export interface preprocess_T {
-	markup(preprocess_opts:object):Promise<map_code_ctx_T>
-	script(preprocess_opts:object):Promise<map_code_ctx_T>
-	style(preprocess_opts:object):Promise<map_code_ctx_T>
+	markup(preprocess_opts:object):Promise<Processed>
+	script(preprocess_opts:object):Promise<Processed>
+	style(preprocess_opts:object):Promise<Processed>
 }
 export type preprocess_type = preprocess_T
 export type PreprocessOptions = preprocess_T
