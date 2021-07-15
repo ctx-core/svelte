@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.4
+
+### Patch Changes
+
+- fix: module imports;types
+
 ## 10.0.3
 
 ### Patch Changes
