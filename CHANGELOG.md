@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.3
+
+### Patch Changes
+
+- fix: browser import
+
 ## 10.0.2
 
 ### Patch Changes
