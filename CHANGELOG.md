@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.0
+
+### Major Changes
+
+- "type": "module": module npm type
+
 ## 9.0.13
 
 ### Patch Changes
