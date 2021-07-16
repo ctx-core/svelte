@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.0.5",
+	"version": "10.0.6",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -16,23 +16,25 @@
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
+	"type": "module",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"exports": {
-		"require": "./dist/index.js",
-		"import": "./dist/index.mjs"
+		"require": "./dist/index.cjs",
+		"import": "./dist/index.js"
 	},
 	"browser": "./dist/index.browser.js",
 	"scripts": {
 		"build": "npm run clean && npm run copy-mjs && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo && rm -f src/**/*.js && rm -f src/**/*.d.ts && rm -f src/**/*.map",
 		"compile": "./node_modules/.bin/tsc -b .",
-		"copy-mjs": "cd dist && echo \"export * from './index.js'\" > index.mjs",
+		"copy-mjs": "cd dist && echo \"require = require('esm')(module/*, options*/)\nmodule.exports = require('./main.js')\nexport * from './index.js'\" > index.cjs",
 		"exec": "$@",
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
+		"esm": "^3.2.25",
 		"svelte": "3.38.3"
 	},
 	"devDependencies": {

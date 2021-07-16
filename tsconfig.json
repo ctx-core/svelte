@@ -7,7 +7,7 @@
 		"sourceMap": true,
 		"noEmitOnError": true,
 		"noErrorTruncation": true,
-		"module": "commonjs",
+		"module": "ESNext",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
 		"noImplicitAny": true,
