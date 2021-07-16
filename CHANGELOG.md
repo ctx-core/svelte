@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.10
+
+### Patch Changes
+
+- fix: EventDispatche type: models svelte update
+
 ## 10.0.9
 
 ### Patch Changes
