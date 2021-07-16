@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.5
+
+### Patch Changes
+
+- support cjs & esm: + "exports"
+
 ## 10.0.4
 
 ### Patch Changes
