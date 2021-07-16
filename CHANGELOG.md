@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.9
+
+### Patch Changes
+
+- fix: cjs: load as a Promise
+
 ## 10.0.8
 
 ### Patch Changes
