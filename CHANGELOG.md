@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.8
+
+### Patch Changes
+
+- "main": "./dist/index.cjs"
+
 ## 10.0.7
 
 ### Patch Changes
