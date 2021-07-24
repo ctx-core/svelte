@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.0.16",
+	"version": "10.0.17",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -38,7 +38,7 @@
 	},
 	"dependencies": {
 		"esm": "^3.2.25",
-		"svelte": "3.40.1"
+		"svelte": "3.40.2"
 	},
 	"devDependencies": {
 		"locate-character": "^2.0.5",
