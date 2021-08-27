@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.0.22",
+	"version": "10.0.23",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -42,7 +42,7 @@
 	},
 	"devDependencies": {
 		"locate-character": "^2.0.5",
-		"typescript": "^4.3.5"
+		"typescript": "^4.4.2"
 	},
 	"publishConfig": {
 		"access": "public",
