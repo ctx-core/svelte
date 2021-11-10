@@ -33,7 +33,7 @@
 		"clean": "rm -rf dist",
 		"compile": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
 		"exec": "$@",
-		"prepublishOnly": "npm run build"
+		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
 		"svelte": "3.44.1"
