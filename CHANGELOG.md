@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.32
+
+### Patch Changes
+
+- compile using swc
+
 ## 10.0.31
 
 ### Patch Changes

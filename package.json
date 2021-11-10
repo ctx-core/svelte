@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.0.31",
+	"version": "10.0.32",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -17,9 +17,9 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"main": "./dist/index.cjs",
+	"main": "./dist/index.js",
 	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"types": "./src/index.ts",
 	"exports": {
 		".": {
 			"require": "./dist/index.cjs",
@@ -29,18 +29,18 @@
 	},
 	"browser": "./dist/index.browser.js",
 	"scripts": {
-		"build": "npm run clean && npm run copy-mjs && npm run compile",
-		"clean": "rm -f tsconfig.tsbuildinfo && rm -f src/**/*.js && rm -f src/**/*.d.ts && rm -f src/**/*.map",
-		"compile": "./node_modules/.bin/tsc -b .",
-		"copy-mjs": "cd dist && echo \"module.exports = (async () => import('./index.js'))()\" > index.cjs",
+		"build": "npm run compile",
+		"clean": "rm -rf dist",
+		"compile": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
 		"exec": "$@",
 		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
-		"esm": "^3.2.25",
 		"svelte": "3.44.1"
 	},
 	"devDependencies": {
+		"@swc/cli": "^0.1.51",
+		"@swc/core": "^1.2.107",
 		"locate-character": "^2.0.5",
 		"typescript": "^4.4.4"
 	},
