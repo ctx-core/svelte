@@ -1,4 +1,4 @@
-import type { MarkupPreprocessor, Preprocessor, PreprocessorGroup, Processed } from 'svelte/types/compiler/preprocess'
+import type { MarkupPreprocessor, Preprocessor, PreprocessorGroup, Processed } from 'svelte/types/compiler/preprocess/index.js'
 export function preprocess_(preprocess_a:PreprocessorGroup[]):preprocess_T {
 	return {
 		markup: compose_preprocess_a_key('markup', preprocess_a),
