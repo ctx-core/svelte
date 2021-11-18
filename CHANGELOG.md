@@ -1,5 +1,12 @@
 # @ctx-core/svelte
 
+## 10.0.34
+
+### Patch Changes
+
+- typescript: ^4.4.4 -> ^4.5.2
+- @swc/core: ^1.2.108 -> ^1.2.110
+
 ## 10.0.33
 
 ### Patch Changes
