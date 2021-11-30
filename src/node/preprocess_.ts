@@ -13,7 +13,7 @@ function compose_preprocess_a_key(
 		for (let i = 0; i < preprocess_a.length; i++) {
 			const fn = preprocess_a[i][key]
 			if (fn) {
-				let processed:Processed|undefined
+				let processed:Processed|void
 				if (key === 'markup') {
 					processed = await (fn as MarkupPreprocessor)(preprocess_opts as MarkupPreprocessor_options_T)
 				} else {
