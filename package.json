@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.0.38",
+	"version": "10.0.39",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -40,7 +40,7 @@
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.52",
-		"@swc/core": "^1.2.117",
+		"@swc/core": "^1.2.118",
 		"locate-character": "^2.0.5",
 		"typescript": "next"
 	},
