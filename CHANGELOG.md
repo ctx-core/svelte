@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.40
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+
 ## 10.0.39
 
 ### Patch Changes
