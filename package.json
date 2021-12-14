@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.0.41",
+	"version": "10.0.42",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -33,7 +33,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"svelte": "3.44.2"
+		"svelte": "^3.44.3"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
