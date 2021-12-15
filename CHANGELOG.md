@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.43
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+
 ## 10.0.42
 
 ### Patch Changes

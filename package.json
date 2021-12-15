@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.0.42",
+	"version": "10.0.43",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -45,5 +45,6 @@
 	"publishConfig": {
 		"access": "public",
 		"cache": "~/.npm"
-	}
+	},
+	"svelte": "./dist/index.js"
 }
