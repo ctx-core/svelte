@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.44
+
+### Patch Changes
+
+- fix: package.json: exports
+
 ## 10.0.43
 
 ### Patch Changes

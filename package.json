@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.0.43",
+	"version": "10.0.44",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -12,19 +12,19 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ctx-core/svelte/issues"
+		"url": "https://github.com/ctx-core/svelte.git"
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
 	"exports": {
 		".": {
-			"types": "./src/index.ts",
-			"import": "./dist/index.js"
+			"browser": "./dist/index.browser.js",
+			"node": "./dist/index.js",
+			"types": "./src/index.ts"
 		},
 		"./package.json": "./package.json"
 	},
-	"browser": "./dist/index.browser.js",
 	"scripts": {
 		"build": "npm run compile",
 		"clean": "rimraf dist",
