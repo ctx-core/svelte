@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.46
+
+### Patch Changes
+
+- \*.d.ts export
+
 ## 10.0.45
 
 ### Patch Changes
