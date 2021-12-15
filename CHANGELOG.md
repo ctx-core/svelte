@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.45
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+
 ## 10.0.44
 
 ### Patch Changes
