@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.49
+
+### Patch Changes
+
+- tsconfig.json: "target": "ES2021"
+
 ## 10.0.48
 
 ### Patch Changes
