@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.48
+
+### Patch Changes
+
+- package.json: "types": "./src/index.ts": better editing experience
+
 ## 10.0.47
 
 ### Patch Changes
