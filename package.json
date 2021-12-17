@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.0.46",
+	"version": "10.0.47",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -17,20 +17,21 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
 			"browser": "./dist/index.browser.js",
-			"node": "./dist/index.js",
-			"types": "./dist/index.d.ts"
+			"node": "./dist/index.js"
 		},
 		"./package.json": "./package.json"
 	},
 	"scripts": {
 		"build": "npm run compile",
-		"clean": "rimraf dist",
+		"clean": "rimraf dist && npm run clean_tsbuildinfo",
+		"clean_tsbuildinfo": "rm -f tsconfig.tsbuildinfo && rm -f dist/**/*.d.ts",
 		"compile": "npm run compile_source && npm run compile_declaration",
 		"compile_source": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
-		"compile_declaration": "tsc src/index.ts --declaration --emitDeclarationOnly --declarationDir dist",
+		"compile_declaration": "npm run clean_tsbuildinfo && tsc --declaration --emitDeclarationOnly --declarationDir dist",
 		"exec": "$@",
 		"prepublishOnly": "npm run clean && npm run build"
 	},

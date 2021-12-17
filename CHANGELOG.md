@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.0.47
+
+### Patch Changes
+
+- fix: build
+
 ## 10.0.46
 
 ### Patch Changes
