@@ -36,11 +36,13 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
+		"@ctx-core/array": "workspace:^23.0.41",
+		"@ctx-core/object": "workspace:^22.0.8",
 		"svelte": "^3.44.3"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
-		"@swc/core": "^1.2.120",
+		"@swc/core": "^1.2.121",
 		"locate-character": "^2.0.5",
 		"rimraf": "^3.0.2",
 		"typescript": "next"
