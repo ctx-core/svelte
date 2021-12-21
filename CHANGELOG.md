@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.1.0
+
+### Minor Changes
+
+- llContext: + <Val> generic: lazy loaded value type
+
 ## 10.0.50
 
 ### Patch Changes

@@ -1,5 +1,5 @@
 import { getContext, setContext } from 'svelte'
-export function llContext(key:string, val_:()=>any) {
+export function llContext<Val>(key:string, val_:()=>Val) {
 	let val = getContext(key)
 	if (val != null) return val
 	val = val_()
