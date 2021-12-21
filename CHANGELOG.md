@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.1.1
+
+### Patch Changes
+
+- fix: llContext: returns Val
+
 ## 10.1.0
 
 ### Minor Changes
