@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.1.1",
+	"version": "10.1.2",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -28,7 +28,7 @@
 	"scripts": {
 		"build": "npm run compile",
 		"clean": "rimraf lib && npm run clean:tsbuildinfo",
-		"clean:tsbuildinfo": "rm -f tsconfig.tsbuildinfo && rm -f lib/**/*.d.ts",
+		"clean:tsbuildinfo": "rimraf tsconfig.tsbuildinfo && rimraf lib/**/*.d.ts",
 		"compile": "npm run compile:source && npm run compile:declaration",
 		"compile:source": "swc src --out-dir lib --copy-files --source-maps --config-file .swcrc",
 		"compile:declaration": "npm run clean:tsbuildinfo && tsc --declaration --emitDeclarationOnly --declarationDir lib",
