@@ -1,5 +1,14 @@
 # @ctx-core/svelte
 
+## 10.1.3
+
+### Patch Changes
+
+- version bump
+- Updated dependencies
+  - @ctx-core/array@23.1.2
+  - @ctx-core/object@22.0.10
+
 ## 10.1.2
 
 ### Patch Changes
