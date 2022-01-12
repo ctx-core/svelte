@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@ctx-core/array": "workspace:^23.1.4",
 		"@ctx-core/object": "workspace:^22.0.12",
-		"svelte": "^3.45.0"
+		"svelte": "^3.46.1"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
