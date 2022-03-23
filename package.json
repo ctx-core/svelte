@@ -37,7 +37,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/array": "*",
-		"@ctx-core/object": "*",
+		"@ctx-core/object": "^22.1.2",
 		"svelte": "^3.46.4"
 	},
 	"devDependencies": {
