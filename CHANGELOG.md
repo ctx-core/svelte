@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.1.9
+
+### Patch Changes
+
+- version bump
+
 ## 10.1.8
 
 ### Patch Changes
