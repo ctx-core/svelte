@@ -41,8 +41,8 @@
 		"svelte": "^3.46.4"
 	},
 	"devDependencies": {
-		"@swc/cli": "^0.1.56",
-		"@swc/core": "^1.2.160",
+		"@swc/cli": "^0.1.57",
+		"@swc/core": "^1.2.161",
 		"locate-character": "^2.0.5",
 		"rimraf": "^3.0.2",
 		"typescript": "next"
