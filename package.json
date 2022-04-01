@@ -38,11 +38,11 @@
 	"dependencies": {
 		"@ctx-core/array": "*",
 		"@ctx-core/object": "^22.1.3",
-		"svelte": "^3.46.5"
+		"svelte": "^3.46.6"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.57",
-		"@swc/core": "^1.2.161",
+		"@swc/core": "^1.2.162",
 		"locate-character": "^2.0.5",
 		"rimraf": "^3.0.2",
 		"typescript": "next"
