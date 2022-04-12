@@ -1,5 +1,15 @@
 # @ctx-core/svelte
 
+## 10.1.12
+
+### Patch Changes
+
+- package.json: exports: update
+- fix: package.json: exports: + default
+- Updated dependencies
+  - @ctx-core/array@26.1.3
+  - @ctx-core/object@22.1.4
+
 ## 10.1.11
 
 ### Patch Changes
