@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.1.20",
+	"version": "10.1.21",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -37,13 +37,13 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^26.2.4",
+		"@ctx-core/array": "^26.3.0",
 		"@ctx-core/object": "^22.1.10",
 		"svelte": "^3.48.0"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.57",
-		"@swc/core": "^1.2.187",
+		"@swc/core": "^1.2.189",
 		"locate-character": "^2.0.5",
 		"rimraf": "^3.0.2",
 		"typescript": "next"
