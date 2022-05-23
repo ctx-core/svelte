@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.1.22
+
+### Patch Changes
+
+- update dependencies
+
 ## 10.1.21
 
 ### Patch Changes

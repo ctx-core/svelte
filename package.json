@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.1.21",
+	"version": "10.1.22",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -37,7 +37,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^26.3.0",
+		"@ctx-core/array": "^26.4.0",
 		"@ctx-core/object": "^22.1.10",
 		"svelte": "^3.48.0"
 	},
