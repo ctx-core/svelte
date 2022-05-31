@@ -1,5 +1,16 @@
 # @ctx-core/svelte
 
+## 10.2.0
+
+### Minor Changes
+
+- \__ suffix aliased by \$_
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/array@26.5.0
+
 ## 10.1.24
 
 ### Patch Changes
