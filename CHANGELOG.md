@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.2.1
+
+### Patch Changes
+
+- @ctx-core/array: 26.5.2
+
 ## 10.2.0
 
 ### Minor Changes
