@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.2.2",
+	"version": "10.2.3",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -39,11 +39,11 @@
 	"dependencies": {
 		"@ctx-core/array": "^26.6.0",
 		"@ctx-core/object": "^22.2.1",
-		"svelte": "^3.48.0"
+		"svelte": "^3.49.0"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.57",
-		"@swc/core": "^1.2.209",
+		"@swc/core": "^1.2.210",
 		"locate-character": "^2.0.5",
 		"rimraf": "^3.0.2",
 		"typescript": "next"
