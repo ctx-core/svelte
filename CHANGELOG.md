@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 11.0.2
+
+### Patch Changes
+
+- fix: export node types
+
 ## 11.0.1
 
 ### Patch Changes

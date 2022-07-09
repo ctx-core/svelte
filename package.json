@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "11.0.1",
+	"version": "11.0.2",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -17,14 +17,15 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"types": "./src/index.d.ts",
 	"svelte": "./src/index.js",
 	"exports": {
 		".": {
-			"default": "./src/index.js"
+			"default": "./src/index.js",
+			"types": "./src/index.d.ts"
 		},
 		"./node": {
-			"node": "./src/node/index.js"
+			"default": "./src/node/index.js",
+			"types": "./src/node/index.d.ts"
 		},
 		"./package.json": "./package.json"
 	},
