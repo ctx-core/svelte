@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 11.0.1
+
+### Patch Changes
+
+- fix: import @ctx-core/svelte/node
+
 ## 11.0.0
 
 ### Major Changes
