@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 12.0.0
+
+### Major Changes
+
+- Extracted @ctx-core/svelte-preprocess
+
 ## 11.0.3
 
 ### Patch Changes
