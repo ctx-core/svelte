@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 11.0.0
+
+### Major Changes
+
+- separate @ctx-core/svelte/node
+
 ## 10.3.3
 
 ### Patch Changes

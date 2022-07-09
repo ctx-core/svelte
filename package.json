@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.3.3",
+	"version": "11.0.0",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -21,9 +21,10 @@
 	"svelte": "./src/index.js",
 	"exports": {
 		".": {
-			"browser": "./src/index.browser.js",
-			"default": "./src/index.js",
-			"node": "./src/index.js"
+			"default": "./src/index.js"
+		},
+		"node": {
+			"node": "./src/node/index.js"
 		},
 		"./package.json": "./package.json"
 	},
