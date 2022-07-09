@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.3.3
+
+### Patch Changes
+
+- - console.debug message
+
 ## 10.3.2
 
 ### Patch Changes
