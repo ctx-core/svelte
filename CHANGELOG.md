@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 11.0.3
+
+### Patch Changes
+
+- version bump
+
 ## 11.0.2
 
 ### Patch Changes
