@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.3.2
+
+### Patch Changes
+
+- fix: writable*fn*,writable\_: get(atom)
+
 ## 10.3.1
 
 ### Patch Changes
