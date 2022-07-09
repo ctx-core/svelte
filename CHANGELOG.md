@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 10.3.0
+
+### Minor Changes
+
+- .js + .d.ts instead of .ts
+
 ## 10.2.3
 
 ### Patch Changes

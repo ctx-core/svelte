@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "10.2.3",
+	"version": "10.3.0",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -17,24 +17,24 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"types": "./lib/index.d.ts",
+	"types": "./src/index.d.ts",
+	"svelte": "./src/index.js",
 	"exports": {
 		".": {
-			"browser": "./lib/index.browser.js",
-			"default": "./lib/index.js",
-			"node": "./lib/index.js"
+			"browser": "./src/index.browser.js",
+			"default": "./src/index.js",
+			"node": "./src/index.js"
 		},
 		"./package.json": "./package.json"
 	},
 	"scripts": {
-		"build": "npm run compile",
-		"clean": "rimraf lib && npm run clean:tsbuildinfo",
-		"clean:tsbuildinfo": "rimraf tsconfig.tsbuildinfo && rimraf lib/**/*.d.ts",
-		"compile": "npm run compile:source && npm run compile:declaration",
-		"compile:source": "swc src --out-dir lib --copy-files --source-maps --config-file .swcrc",
-		"compile:declaration": "npm run clean:tsbuildinfo && tsc --declaration --emitDeclarationOnly --declarationDir lib",
+		"build": ":",
+		"clean": ":",
 		"exec": "$@",
-		"prepublishOnly": "npm run clean && npm run build"
+		"prepublishOnly": "npm run clean && npm run build && npm run test",
+		"test": "pnpm test-unit && check-dts",
+		"test-unit": "tsm node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
+		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
 		"@ctx-core/array": "^26.6.0",
@@ -42,16 +42,16 @@
 		"svelte": "^3.49.0"
 	},
 	"devDependencies": {
-		"@swc/cli": "^0.1.57",
-		"@swc/core": "^1.2.210",
+		"c8": "^7.11.3",
+		"check-dts": "^0.6.7",
 		"locate-character": "^2.0.5",
-		"rimraf": "^3.0.2",
-		"typescript": "next"
+		"tsm": "^2.2.1",
+		"typescript": "next",
+		"uvu": "^0.5.6"
 	},
 	"publishConfig": {
 		"access": "public",
 		"cache": "~/.npm"
 	},
-	"svelte": "./lib/index.js",
 	"sideEffects": false
 }
