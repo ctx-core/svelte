@@ -1,4 +1,4 @@
-import { set } from './set/index.js'
+import { set } from '../set/index.js'
 /**
  * Returns a function to set the given store using the value returned by `setter`.
  * This is useful in conjunction with [subscribe](#subscribe).

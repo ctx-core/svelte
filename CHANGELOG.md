@@ -1,5 +1,13 @@
 # @ctx-core/svelte
 
+## 10.3.1
+
+### Patch Changes
+
+- fix: import
+
+  fix: readable
+
 ## 10.3.0
 
 ### Minor Changes
