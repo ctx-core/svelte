@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 12.0.2
+
+### Patch Changes
+
+- readable*,derived*,mix*readable*,readable*fn*: fix: assign props onto the object
+
 ## 12.0.1
 
 ### Patch Changes
