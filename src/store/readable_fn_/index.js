@@ -16,6 +16,9 @@ export function readable_fn_(atom, rest = {}) {
 			}
 			return Reflect.get(atom, prop, atom)
 		},
+		set(target, prop, val, receiver) {
+			return Reflect.set(atom, prop, val, atom)
+		},
 		...rest
 	})
 }
