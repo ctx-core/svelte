@@ -37,8 +37,8 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^26.7.1",
-		"@ctx-core/object": "^22.2.1",
+		"@ctx-core/array": "^26.7.3",
+		"@ctx-core/object": "^22.2.3",
 		"svelte": "^3.49.0"
 	},
 	"devDependencies": {
