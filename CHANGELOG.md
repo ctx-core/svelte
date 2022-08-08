@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 12.0.4
+
+### Patch Changes
+
+- readable*set_a*: returns a Readable\_
+
 ## 12.0.3
 
 ### Patch Changes
