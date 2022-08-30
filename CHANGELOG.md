@@ -1,5 +1,17 @@
 # @ctx-core/svelte
 
+## 13.0.0
+
+### Major Changes
+
+- subscribe_wait,subscribe_wait_timeout: condition argument is required
+
+## 12.1.0
+
+### Minor Changes
+
+- subscribe_wait: optional timeout argument
+
 ## 12.0.5
 
 ### Patch Changes
