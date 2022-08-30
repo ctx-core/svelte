@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 13.0.1
+
+### Patch Changes
+
+- subscribe_wait_timeout: calls subscribe_wait
+
 ## 13.0.0
 
 ### Major Changes
