@@ -1,6 +1,6 @@
 import { assign } from '@ctx-core/object'
 import { get } from '../get/index.js'
-export function mixin_refresh(readable, set) {
+export function mix_refresh(readable, set) {
 	return assign(readable, {
 		refresh: function (in_val = readable.$) {
 			if (set) {

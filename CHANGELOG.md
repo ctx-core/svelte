@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 13.2.0
+
+### Minor Changes
+
+- mixin_refresh=>mix_refresh
+
 ## 13.1.0
 
 ### Minor Changes
