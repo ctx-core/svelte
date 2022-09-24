@@ -1,5 +1,17 @@
 # @ctx-core/svelte
 
+## 13.4.0
+
+### Minor Changes
+
+- feat:
+
+  readable**set*o* aliased by readable**set*ctx*
+  readable**set_o**T aliased by readable**set_ctx**T
+  readable*set_o* aliased by readable*set_ctx*
+  readable_set_o_T aliased by readable_set_ctx_T
+  readable_set_o\_\_set_T aliased by readable_set_ctx$\_T
+
 ## 13.3.0
 
 ### Minor Changes
