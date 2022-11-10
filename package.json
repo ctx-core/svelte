@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "13.4.3",
+	"version": "13.4.4",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -40,13 +40,13 @@
 		"@ctx-core/array": "^26.7.8",
 		"@ctx-core/number": "^8.6.0",
 		"@ctx-core/object": "^22.3.0",
-		"svelte": "^3.53.0"
+		"svelte": "^3.53.1"
 	},
 	"devDependencies": {
 		"c8": "^7.12.0",
 		"check-dts": "^0.6.7",
 		"locate-character": "^2.0.5",
-		"tsx": "^3.11.0",
+		"tsx": "^3.12.0",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},
