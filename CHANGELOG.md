@@ -1,5 +1,15 @@
 # @ctx-core/svelte
 
+## 13.4.20
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+- Updated dependencies
+  - @ctx-core/array@26.8.13
+  - @ctx-core/number@8.6.1
+  - @ctx-core/object@24.1.1
+
 ## 13.4.19
 
 ### Patch Changes
