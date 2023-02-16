@@ -43,7 +43,7 @@
 		"svelte": "^3.55.1"
 	},
 	"devDependencies": {
-		"c8": "^7.12.0",
+		"c8": "^7.13.0",
 		"check-dts": "^0.7.0",
 		"locate-character": "^2.0.5",
 		"tsx": "^3.12.3",
