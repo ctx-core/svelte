@@ -22,7 +22,7 @@ export function mix_refresh(readable, set) {
 				throw err
 			}
 		} else {
-			throw 'refresh only works on a Writable or a Readable with a set function argument'
+			throw new Error('refresh only works on a Writable or a Readable with a set function argument')
 		}
 	}
 }

@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 13.4.32
+
+### Patch Changes
+
+- fix: `throw new Error(error_message)` instead of `throw error_message`
+
 ## 13.4.31
 
 ### Patch Changes
