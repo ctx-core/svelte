@@ -1,5 +1,17 @@
 # @ctx-core/svelte
 
+## 13.4.41
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/object@26.0.0
+  - @ctx-core/array@26.11.11
+
 ## 13.4.40
 
 ### Patch Changes
