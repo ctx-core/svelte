@@ -1,5 +1,15 @@
 # @ctx-core/svelte
 
+## 13.4.47
+
+### Patch Changes
+
+- readable: fix: export { readable } from 'svelte/store'
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/number@8.6.2
+  - @ctx-core/object@27.1.4
+
 ## 13.4.46
 
 ### Patch Changes

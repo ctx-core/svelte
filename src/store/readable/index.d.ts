@@ -1,1 +1,2 @@
-export type { readable, Readable } from 'svelte/store'
+export { readable } from 'svelte/store'
+export type { Readable } from 'svelte/store'
