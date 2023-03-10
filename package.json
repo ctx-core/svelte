@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "13.4.52",
+	"version": "13.4.53",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -40,7 +40,7 @@
 		"@ctx-core/array": "^26.12.0",
 		"@ctx-core/number": "^8.6.2",
 		"@ctx-core/object": "^27.1.6",
-		"svelte": "^3.55.1"
+		"svelte": "^3.56.0"
 	},
 	"devDependencies": {
 		"c8": "^7.13.0",
