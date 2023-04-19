@@ -1,5 +1,15 @@
 # @ctx-core/svelte
 
+## 13.4.86
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^20.3.3 -> ^20.3.4
+- Updated dependencies
+  - @ctx-core/array@26.12.32
+  - @ctx-core/number@8.6.22
+  - @ctx-core/object@27.4.23
+
 ## 13.4.85
 
 ### Patch Changes
