@@ -1,3 +1,5 @@
+export * from './be_derived_pair_/index.js'
+export * from './be_writable_triple_/index.js'
 export * from './change_once_subscribe/index.js'
 export * from './clear_store/index.js'
 export * from './clear_store_/index.js'

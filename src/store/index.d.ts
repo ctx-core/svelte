@@ -1,4 +1,6 @@
 export * from './_types'
+export * from './be_derived_pair_'
+export * from './be_writable_triple_'
 export * from './change_once_subscribe'
 export * from './clear_store'
 export * from './clear_store_'

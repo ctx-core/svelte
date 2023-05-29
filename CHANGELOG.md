@@ -1,5 +1,12 @@
 # @ctx-core/svelte
 
+## 13.5.0
+
+### Minor Changes
+
+- - be*writable_triple*
+- - be*derived_pair*
+
 ## 13.4.91
 
 ### Patch Changes
