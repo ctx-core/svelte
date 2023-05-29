@@ -1,11 +1,12 @@
 import type { Readable, Subscriber, Unsubscriber } from 'svelte/store'
+import type { StoresValues } from '../_types'
 /**
  * Subscribes the run to store but does not have the initial call.
  */
 export declare function noinit_subscribe<
-	Val extends unknown = unknown
+	Val extends Readable<unknown> = Readable<unknown>
 >(
-	store:Readable<Val>,
-	run:Subscriber<Val>
+	store:Val,
+	run:Subscriber<StoresValues<Val>>
 ):Unsubscriber
 export { noinit_subscribe as subscribe__noinit }

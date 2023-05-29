@@ -1,5 +1,13 @@
 # @ctx-core/svelte
 
+## 14.0.0
+
+### Major Changes
+
+- noinit_subscribe: generics: Val extends Readable<unknown> = Readable<unknown>:
+
+      fix: type inference
+
 ## 13.8.0
 
 ### Minor Changes
