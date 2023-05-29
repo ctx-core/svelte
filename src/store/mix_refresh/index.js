@@ -1,6 +1,17 @@
 import { assign } from '@ctx-core/object'
 import { get } from '../get/index.js'
-export function mix_refresh(readable, set) {
+/** @typedef {import('../_types').refresh_mixin_T}refresh_mixin_T */
+/** @typedef {import('svelte/store').Readable}Readable */
+/** @typedef {import('svelte/store').Subscriber}Subscriber */
+/**
+ * @param {Readable}readable
+ * @param {Subscriber}[set]
+ * @returns {refresh_mixin_T}
+ */
+export function mix_refresh(
+	readable,
+	set
+) {
 	return assign(readable, { refresh })
 	function refresh(in_val = get(readable)) {
 		if (set) {

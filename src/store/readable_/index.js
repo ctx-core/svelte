@@ -1,6 +1,17 @@
 import { readable } from 'svelte/store'
 import { readable_fn_ } from '../readable_fn_/index.js'
-export function readable_(value, start) {
+/** @typedef {import('../_types').StartStopNotifier}StartStopNotifier */
+/** @typedef {import('../readable').Readable}Readable */
+/**
+ * @param {unknown}value
+ * @param {StartStopNotifier}start
+ * @returns {Readable}
+ * @private
+ */
+export function readable_(
+	value,
+	start
+) {
 	const store = readable(value, start)
 	return mix_readable_(store)
 }

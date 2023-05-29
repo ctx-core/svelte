@@ -1,7 +1,18 @@
 import { readable } from 'svelte/store'
 import { readable_set_a_ } from '../readable_set_a_/index.js'
 import { mix_readable_ } from '../readable_/index.js'
-export function readable__set_a_(initial, readable_ = readable) {
+/** @typedef {import('svelte/store').Readable}Readable */
+/** @typedef {import('../readable_set_a_').readable_set_a__set_T}readable_set_a__set_T */
+/**
+ * @param {unknown}initial
+ * @param {typeof readable}[readable_]
+ * @returns {readable_set_a__set_T}
+ * @private
+ */
+export function readable__set_a_(
+	initial,
+	readable_ = readable
+) {
 	const [store, set] = readable_set_a_(initial, readable_)
 	const store_ = mix_readable_(store)
 	return [

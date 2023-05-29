@@ -1,6 +1,16 @@
 import { readable_ } from '../readable_/index.js'
 import { get } from '../get/index.js'
-export function readable_set_a_(initial, readable_fn = readable_) {
+/** @typedef {import('svelte/store').readable}readable */
+/**
+ * @param {unknown}initial
+ * @param {typeof readable}[readable_fn]
+ * @returns {Readable<unknown>[]}
+ * @private
+ */
+export function readable_set_a_(
+	initial,
+	readable_fn = readable_
+) {
 	let set = undefined
 	const store = readable_fn(initial, (in_set)=>{
 		set = in_set

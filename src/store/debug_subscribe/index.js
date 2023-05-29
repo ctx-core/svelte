@@ -1,6 +1,11 @@
 import { subscribe } from '../subscribe/index.js'
+/** @typedef {import('svelte/store').Readable}Readable */
+/** @typedef {import('svelte/store').Unsubscriber}Unsubscriber */
 /**
  * Logs (console.debug) changes to a store
+ * @param {Readable}store
+ * @param {string}label
+ * @return {Unsubscriber}
  */
 export function debug_subscribe(store, label) {
 	try {

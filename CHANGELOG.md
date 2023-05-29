@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 13.6.0
+
+### Minor Changes
+
+- - jsdoc
+
 ## 13.5.0
 
 ### Minor Changes

@@ -1,8 +1,15 @@
 import type { readable } from '../readable'
 import type { Readable_ } from '../readable_'
 import type { readable_set_o_T } from '../readable_set_o_'
-export declare function readable__set_o_<Val extends unknown = unknown>(initial:Val, readable_fn?:typeof readable):readable__set_o__T<Val>;
-export interface readable__set_o__T<Val extends unknown = unknown> extends readable_set_o_T<Val> {
+export declare function readable__set_o_<
+	Val extends unknown = unknown
+>(
+	initial:Val,
+	readable_fn?:typeof readable
+):readable__set_o__T<Val>
+export interface readable__set_o__T<
+	Val extends unknown = unknown
+> extends readable_set_o_T<Val> {
 	store:Readable_<Val>
 }
 export {

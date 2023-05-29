@@ -1,11 +1,16 @@
 import { get } from 'svelte/store'
+/** @typedef {import('svelte/store').Readable}Readable */
+/** @typedef {import('../readable_').Readable_}Readable_ */
 /**
  * @param {import('svelte/store').Readable}atom
- * @param {ProxyHandler<import('svelte/store').Readable<any>>}rest
- * @returns {(function(): *)|any}
+ * @param {ProxyHandler<Readable>}[rest]
+ * @returns {Readable_}
  * @private
  */
-export function readable_fn_(atom, rest = {}) {
+export function readable_fn_(
+	atom,
+	rest = {}
+) {
 	function fn() {
 		return get(atom)
 	}

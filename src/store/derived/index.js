@@ -1,10 +1,30 @@
 import { derived as in_derived } from 'svelte/store'
 import { isArray, tup } from '@ctx-core/array'
-export function derived(stores, in_fn, initial_value) {
-	const fn = in_fn
-	return in_fn.length === 1 ? in_derived(stores, (values)=>{
-		return fn(isArray(values) ? tup(...values) : values)
-	}) : in_derived(stores, (values, set)=>{
-		return fn(isArray(values) ? tup(...values) : values, set)
-	}, initial_value)
+/** @typedef {import('../_types').Stores}Stores */
+/** @typedef {import('./index.d.ts').set_derived__fn_T}set_derived__fn_T */
+/**
+ * @param {Stores}stores
+ * @param {set_derived__fn_T}fn
+ * @param {unknown}initial_value
+ * @returns {Readable}
+ */
+export function derived(
+	stores,
+	fn,
+	initial_value
+) {
+	return (
+		fn.length === 1
+		? in_derived(stores, (values)=>
+			fn(
+				isArray(values)
+				? tup(...values)
+				: values))
+		: in_derived(
+			stores,
+			(values, set)=>
+				fn(isArray(values)
+					 ? tup(...values)
+					 : values, set),
+			initial_value))
 }
