@@ -27,10 +27,13 @@ export function be_derived_pair_(
 		derived__new = derived__new_OR_be__params
 	}
 	if (!derived__new) throw new Error('be_derived_pair_|derived__new argument is required')
+	const _be_ =
+		(be__params && be__params.be_)
+		?? be_
 	const val__ =
 		id
-		? be_(id, derived__new, be__params)
-		: be_(derived__new, be__params)
+		? _be_(id, derived__new, be__params)
+		: _be_(derived__new, be__params)
 	function val_(ctx) {
 		return val__(ctx).$
 	}

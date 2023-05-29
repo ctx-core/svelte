@@ -1,5 +1,14 @@
 # @ctx-core/svelte
 
+## 13.7.0
+
+### Minor Changes
+
+- be\__params: + be_ override param support:
+
+      be_derived_pair_
+      be_writable_triple_
+
 ## 13.6.2
 
 ### Patch Changes

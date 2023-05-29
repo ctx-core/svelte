@@ -37,10 +37,13 @@ export function be_writable_triple_(
 			()=>
 				writable_()
 	}
+	const _be_ =
+		(be__params && be__params.be_)
+		?? be_
 	const val__ =
 		id
-		? be_(id, writable__new, be__params)
-		: be_(writable__new, be__params)
+		? _be_(id, writable__new, be__params)
+		: _be_(writable__new, be__params)
 	function val_(ctx) {
 		return val__(ctx).$
 	}
