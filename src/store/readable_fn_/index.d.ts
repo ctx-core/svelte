@@ -1,8 +1,9 @@
 import type { Readable } from 'svelte/store'
+import type { StoresValues } from '../_types'
 import type { Readable_ } from '../readable_'
 export declare function readable_fn_<
-	Val
+	Store extends Readable<unknown>
 >(
-	atom:Readable<Val>,
-	rest?:ProxyHandler<Readable<Val>>
-):Readable_<Val>
+	atom:Store,
+	rest?:ProxyHandler<Store>
+):Readable_<StoresValues<Store>>

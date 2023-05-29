@@ -1,5 +1,30 @@
 # @ctx-core/svelte
 
+## 14.0.1
+
+### Patch Changes
+
+- multi_subscribe: generics update:
+
+      Store extends Readable<any> = Readable<any>
+
+- generics updates: Store extends Readable<unknown>:
+
+      change_once_subscribe
+      clear_store
+      clear_store_
+      get
+      mix_set_readable
+      multi_subscribe
+      readable_fn_
+      subscribe
+
+  generics updates: Store extends Writable<unknown>:
+
+      debug_subscribe
+      set
+      set_store_
+
 ## 14.0.0
 
 ### Major Changes

@@ -1,11 +1,11 @@
 import type { Readable, Subscriber, Writable } from 'svelte/store'
 import type { refresh_mixin_T } from '../_types'
 export declare function mix_refresh<
-	store_T extends unknown = unknown
+	Val extends unknown = unknown
 >(
-	readable:Readable<store_T>,
+	readable:Readable<Val>,
 	set?:
-		typeof readable extends Writable<store_T>
+		typeof readable extends Writable<Val>
 		? undefined
-		: Subscriber<store_T>
-):refresh_mixin_T<store_T>
+		: Subscriber<Val>
+):refresh_mixin_T<Val>

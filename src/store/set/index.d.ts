@@ -1,10 +1,11 @@
 import type { Writable } from 'svelte/store'
+import type { StoresValues } from '../_types'
 /**
  * Calls set on the given store with the given val
  */
 export declare function set<
-	Val extends unknown = unknown
+	Store extends Writable<unknown>
 >(
-	store:Writable<Val>,
-	val:Val
+	store:Store,
+	val:StoresValues<Store>
 ):void

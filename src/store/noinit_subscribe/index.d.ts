@@ -4,9 +4,9 @@ import type { StoresValues } from '../_types'
  * Subscribes the run to store but does not have the initial call.
  */
 export declare function noinit_subscribe<
-	Val extends Readable<unknown> = Readable<unknown>
+	Store extends Readable<unknown>
 >(
-	store:Val,
-	run:Subscriber<StoresValues<Val>>
+	store:Store,
+	run:Subscriber<StoresValues<Store>>
 ):Unsubscriber
 export { noinit_subscribe as subscribe__noinit }

@@ -1,4 +1,5 @@
+import type { StoresValues } from '../_types'
 import type { Readable } from '../readable'
 export declare function get<
-	Val extends unknown = unknown
->(store:Readable<Val>):Val
+	Store extends Readable<unknown>
+>(store:Store):StoresValues<Store>
