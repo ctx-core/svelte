@@ -1,12 +1,19 @@
 # @ctx-core/svelte
 
+## 13.8.0
+
+### Minor Changes
+
+- - be_readable_pair_T: aliased by be_derived_pair_T
+- - be*readable_pair*: aliased by be*derived_pair*
+
 ## 13.7.0
 
 ### Minor Changes
 
 - be\__params: + be_ override param support:
 
-      be_derived_pair_
+      be_readable_pair_
       be_writable_triple_
 
 ## 13.6.2
