@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 13.6.1
+
+### Patch Changes
+
+- fix: exports
+
 ## 13.6.0
 
 ### Minor Changes
