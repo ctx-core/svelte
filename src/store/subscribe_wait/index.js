@@ -1,6 +1,7 @@
 import { isNumber_ } from '@ctx-core/number'
 import { promise_timeout } from '@ctx-core/function'
 /** @typedef {import('svelte/store').Readable}Readable */
+/** @typedef {import('svelte/store').Unsubscriber}Unsubscriber */
 /** @typedef {import('./index.d.ts').subscribe_wait__condition_fn_T}subscribe_wait__condition_fn_T */
 /**
  * @param {Readable}store
@@ -16,7 +17,9 @@ export function subscribe_wait(
 	const _subscribe_wait =
 		new Promise(resolve=>{
 			let unsubscribe_oninit = false
-			const unsubscribe = store.subscribe(val=>{
+			/** @type {Unsubscriber} */
+			let unsubscribe // Need this to prevent ReferenceError
+			unsubscribe = store.subscribe(val=>{
 				if (condition_fn(val)) {
 					if (unsubscribe) unsubscribe()
 					else unsubscribe_oninit = true

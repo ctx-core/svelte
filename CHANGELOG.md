@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 14.0.2
+
+### Patch Changes
+
+- subscribe_wait: fix: ReferenceError
+
 ## 14.0.1
 
 ### Patch Changes
