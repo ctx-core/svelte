@@ -1,5 +1,16 @@
 # @ctx-core/svelte
 
+## 14.1.0
+
+### Minor Changes
+
+- generics: + ctx_T extends Ctx = Ctx:
+
+      be_readable_pair_
+      be_readable_pair_T
+      be_writable_triple_
+      be_writable_triple_T
+
 ## 14.0.2
 
 ### Patch Changes

@@ -3,33 +3,38 @@ import type { Writable } from 'svelte/store'
 import type { StoresValues } from '../_types'
 import type { Writable_ } from '../writable_'
 export declare function be_writable_triple_<
-	A extends Writable<unknown> = Writable_<unknown>
+	A extends Writable<unknown> = Writable_<unknown>,
+	ctx_T extends Ctx = Ctx
 >(
 	be__params?:be__params_T
-):be_writable_triple_T<A>
+):be_writable_triple_T<A, ctx_T>
 export declare function be_writable_triple_<
-	A extends Writable<unknown> = Writable_<unknown>
+	A extends Writable<unknown> = Writable_<unknown>,
+	ctx_T extends Ctx = Ctx
 >(
 	id:string|null|undefined,
 	be__params?:be__params_T
-):be_writable_triple_T<A>
+):be_writable_triple_T<A, ctx_T>
 export declare function be_writable_triple_<
-	A extends Writable<unknown> = Writable_<unknown>
+	A extends Writable<unknown> = Writable_<unknown>,
+	ctx_T extends Ctx = Ctx
 >(
-	writable__new:(ctx:Ctx)=>A,
+	writable__new:(ctx:ctx_T)=>A,
 	be__params?:be__params_T
-):be_writable_triple_T<A>
+):be_writable_triple_T<A, ctx_T>
 export declare function be_writable_triple_<
-	A extends Writable<unknown> = Writable_<unknown>
+	A extends Writable<unknown> = Writable_<unknown>,
+	ctx_T extends Ctx = Ctx
 >(
 	id?:string|null|undefined,
-	writable__new?:((ctx:Ctx)=>A),
+	writable__new?:((ctx:ctx_T)=>A),
 	be__params?:be__params_T
-):be_writable_triple_T<A>
+):be_writable_triple_T<A, ctx_T>
 export type be_writable_triple_T<
-	A extends Writable<unknown> = Writable_<unknown>
+	A extends Writable<unknown> = Writable_<unknown>,
+	ctx_T extends Ctx = Ctx
 > = [
 	Be<A>,
-	(ctx:Ctx)=>StoresValues<A>,
-	(ctx:Ctx, val:StoresValues<A>)=>void
+	(ctx:ctx_T)=>StoresValues<A>,
+	(ctx:ctx_T, val:StoresValues<A>)=>void
 ]
