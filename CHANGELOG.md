@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 14.1.7
+
+### Patch Changes
+
+- locate-character: ^2.0.5 -> ^3.0.0
+
 ## 14.1.6
 
 ### Patch Changes
