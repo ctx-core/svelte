@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 14.1.19
+
+### Patch Changes
+
+- svelte: ^4.1.2 -> ^4.2.0
+
 ## 14.1.18
 
 ### Patch Changes
