@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "14.2.1",
+	"version": "14.2.2",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -20,6 +20,7 @@
 	"main": "./index.js",
 	"files": [
 		"*.d.ts",
+		"*.json",
 		"./llContext",
 		"./store",
 		"./_types"
@@ -42,10 +43,10 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^27.0.1",
-		"@ctx-core/function": "^21.21.1",
-		"@ctx-core/number": "^8.7.1",
-		"@ctx-core/object": "^30.1.1",
+		"@ctx-core/array": "^27.0.2",
+		"@ctx-core/function": "^21.21.2",
+		"@ctx-core/number": "^8.7.2",
+		"@ctx-core/object": "^30.1.2",
 		"svelte": "^4.2.3"
 	},
 	"devDependencies": {
