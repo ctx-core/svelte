@@ -1,5 +1,19 @@
 # @ctx-core/svelte
 
+## 14.2.1
+
+### Patch Changes
+
+- svelte: ^4.2.2 -> ^4.2.3
+- @ctx-core/function: ^21.20.2 -> ^21.21.0
+- tsx: ^4.0.0 -> ^4.1.2
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/array@27.0.1
+  - @ctx-core/function@21.21.1
+  - @ctx-core/number@8.7.1
+  - @ctx-core/object@30.1.1
+
 ## 14.2.0
 
 ### Minor Changes
