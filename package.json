@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "14.2.5",
+	"version": "14.2.6",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -44,11 +44,11 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^27.0.5",
-		"@ctx-core/function": "^21.22.0",
-		"@ctx-core/number": "^8.7.5",
-		"@ctx-core/object": "^30.2.0",
-		"svelte": "^4.2.3"
+		"@ctx-core/array": "^27.0.6",
+		"@ctx-core/function": "^21.22.1",
+		"@ctx-core/number": "^8.7.6",
+		"@ctx-core/object": "^30.3.0",
+		"svelte": "^4.2.4"
 	},
 	"devDependencies": {
 		"c8": "^8.0.1",
