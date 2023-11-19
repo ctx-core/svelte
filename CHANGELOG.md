@@ -1,5 +1,30 @@
 # @ctx-core/svelte
 
+## 15.0.0
+
+### Major Changes
+
+- be*writable_triple*,be*readable_pair*:
+
+      single argument: val__new
+      instantiates a Writable_/Readable_
+      config delegates to:
+      	.config
+      	.oninit__def
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/object@31.0.0
+  - @ctx-core/array@27.0.17
+  - @ctx-core/function@21.22.12
+  - @ctx-core/number@8.7.17
+
 ## 14.2.16
 
 ### Patch Changes
