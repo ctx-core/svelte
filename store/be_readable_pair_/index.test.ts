@@ -43,7 +43,8 @@ test('be_readable_pair_|+id|+is_source_|+oninit', ()=>{
 			is_source_: map_ctx=>map_ctx === ctx
 		})
 		.oninit((_ctx, foobar$)=>{
-			equal(_ctx, ctx)
+			if (Array.isArray(_ctx)) equal(_ctx[1], ctx)
+			else equal(_ctx, ctx)
 			foobar$.custom = 'custom-val'
 		})
 	equal(foobar$_([ctx__new(), ctx]).$, 2)
