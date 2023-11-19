@@ -10,7 +10,7 @@
       instantiates a Writable_/Readable_
       config delegates to:
       	.config
-      	.oninit__def
+      	.oninit
 
 ### Patch Changes
 

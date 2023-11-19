@@ -1,5 +1,5 @@
 import { each, wrap_a_ } from '@ctx-core/array'
-/** @typedef {import('svelte/store').Readable}Readable */
+/** @typedef {import('svelte/store').Readable} */
 /**
  * Sets each store with val
  * @param {Readable|Readable[]}stores

@@ -1,7 +1,7 @@
 import { clear_store } from '../clear_store/index.js'
-/** @typedef {import('svelte/store').Writable}Writable */
-/** @typedef {import('svelte/store').Subscriber}Subscriber */
-/** @typedef {import('./index.d.ts').clear_store_T}clear_store_T */
+/** @typedef {import('svelte/store').Writable} */
+/** @typedef {import('svelte/store').Subscriber} */
+/** @typedef {import('./index.d.ts').clear_store_T} */
 /**
  * Returns a function that [clear_store](#clear_store).
  * @param {Writable|Writable[]}stores

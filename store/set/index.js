@@ -1,4 +1,4 @@
-/** @typedef {import('svelte/store').Writable}Writable */
+/** @typedef {import('svelte/store').Writable} */
 /**
  * @param {Writable}store
  * @param {unknown}val

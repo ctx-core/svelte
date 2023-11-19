@@ -15,7 +15,7 @@ test('be_writable_triple_', ()=>{
 	equal(foobar__(ctx).$, 2)
 	equal(foobar_(ctx), 2)
 })
-test('be_writable_triple_|+id__set|+is_source__def|+oninit__def', ()=>{
+test('be_writable_triple_|+id|+is_source_|+oninit', ()=>{
 	const ctx = ctx__new()
 	const [
 		foobar$_,
@@ -24,16 +24,21 @@ test('be_writable_triple_|+id__set|+is_source__def|+oninit__def', ()=>{
 	] = be_writable_triple_<number, Writable_<number>&{
 		custom:string
 	}>(()=>1)
-		.config(foobar$=>foobar$
-			.id__set('foobar')
-			.is_source__def(map_ctx=>map_ctx === ctx))
-		.oninit__def(foobar$=>foobar$.custom = 'custom-val')
+		.config({
+			id: 'foobar',
+			is_source_: map_ctx=>map_ctx === ctx
+		})
+		.oninit((_ctx, foobar$)=>{
+			equal(_ctx, ctx)
+			foobar$.custom = 'custom-val'
+		})
 	equal(foobar$_([ctx__new(), ctx]).$, 1)
 	equal(foobar_([ctx__new(), ctx]), 1)
 	equal(foobar$_(ctx).$, 1)
 	equal(foobar_(ctx), 1)
 	equal((ctx.get('foobar') as Writable_<number>).$, 1)
 	equal(foobar$_([ctx__new(), ctx]).custom, 'custom-val')
+	equal(foobar$_(ctx).custom, 'custom-val')
 	foobar__set([ctx__new(), ctx], 2)
 	equal(foobar$_([ctx__new(), ctx]).$, 2)
 	equal(foobar_([ctx__new(), ctx]), 2)
@@ -41,5 +46,6 @@ test('be_writable_triple_|+id__set|+is_source__def|+oninit__def', ()=>{
 	equal(foobar_(ctx), 2)
 	equal((ctx.get('foobar') as Writable_<number>).$, 2)
 	equal(foobar$_([ctx__new(), ctx]).custom, 'custom-val')
+	equal(foobar$_(ctx).custom, 'custom-val')
 })
 test.run()

@@ -1,7 +1,7 @@
 import { isArray, tup } from '@ctx-core/array'
 import { derived as in_derived } from 'svelte/store'
-/** @typedef {import('../_types/index.d.ts').Stores}Stores */
-/** @typedef {import('./index.d.ts').set_derived__fn_T}set_derived__fn_T */
+/** @typedef {import('../_types/index.d.ts').Stores} */
+/** @typedef {import('./index.d.ts').set_derived__fn_T} */
 /**
  * @param {Stores}stores
  * @param {set_derived__fn_T}fn

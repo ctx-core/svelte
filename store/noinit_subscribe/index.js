@@ -1,7 +1,7 @@
 import { subscribe } from '../subscribe/index.js'
-/** @typedef {import('svelte/store').Readable}Readable */
-/** @typedef {import('svelte/store').Subscriber}Subscriber */
-/** @typedef {import('svelte/store').Unsubscriber}Unsubscriber */
+/** @typedef {import('svelte/store').Readable} */
+/** @typedef {import('svelte/store').Subscriber} */
+/** @typedef {import('svelte/store').Unsubscriber} */
 /**
  * Subscribes the run to store but does not have the initial call.
  * @param {Readable}store

@@ -1,7 +1,7 @@
 import { noinit_subscribe } from '../noinit_subscribe/index.js'
-/** @typedef {import('svelte/store').Readable}Readable */
-/** @typedef {import('svelte/store').Subscriber}Subscriber */
-/** @typedef {import('svelte/store').Unsubscriber}Unsubscriber */
+/** @typedef {import('svelte/store').Readable} */
+/** @typedef {import('svelte/store').Subscriber} */
+/** @typedef {import('svelte/store').Unsubscriber} */
 /**
  * Calls the given fn the next time the value of the store changes, then unsubscribes.
  * @param {Readable}store

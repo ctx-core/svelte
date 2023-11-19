@@ -1,6 +1,6 @@
 import { readable } from 'svelte/store'
 import { get } from '../get/index.js'
-/** @typedef {import('./index.d.ts').readable_set_o_T}readable_set_o_T */
+/** @typedef {import('./index.d.ts').readable_set_o_T} */
 /**
  * @param {unknown}initial
  * @param {typeof readable}[readable_fn]

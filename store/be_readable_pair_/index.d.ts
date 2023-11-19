@@ -1,4 +1,4 @@
-import type { Be, be__val__new_T, Ctx } from '@ctx-core/object'
+import type { Be, be__config_params_T, be__val__new_T, Ctx } from '@ctx-core/object'
 import type { Readable } from 'svelte/store'
 import type { StoresValues } from '../_types/index.js'
 import type { Readable_ } from '../readable_/index.js'
@@ -16,8 +16,8 @@ export type be_readable_pair_T<
 	Be<readable_T>,
 	(ctx:ctx_T)=>StoresValues<readable_T>
 ]&{
-	config:(config__fn:(be:Be<readable_T>)=>unknown)=>be_readable_pair_T<readable_T, ctx_T>
-	oninit__def:(oninit:(rmemo:readable_T)=>unknown)=>be_readable_pair_T<readable_T, ctx_T>
+	config:(params:be__config_params_T)=>be_readable_pair_T<readable_T, ctx_T>
+	oninit:(fn:(ctx:Ctx, rmemo:readable_T)=>unknown)=>be_readable_pair_T<readable_T, ctx_T>
 }
 export type be_derived_pair_T<
 	readable_T extends Readable<unknown> = Readable_<unknown>,

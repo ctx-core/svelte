@@ -13,7 +13,7 @@ export function be_writable_triple_(val__new) {
 	const be_writable_triple = [
 		be_(ctx=>{
 			let atom = writable_(val__new(ctx))
-			oninit?.(atom)
+			oninit?.(ctx, atom)
 			return atom
 		}),
 		ctx=>be_writable_triple[0](ctx)(),
@@ -21,7 +21,7 @@ export function be_writable_triple_(val__new) {
 			be_writable_triple[0](ctx).set(val)
 		},
 	]
-	be_writable_triple.config = config__fn=>(config__fn(be_writable_triple[0]), be_writable_triple)
-	be_writable_triple.oninit__def = _oninit=>(oninit = _oninit, be_writable_triple)
+	be_writable_triple.config = params=>(be_writable_triple[0].config(params), be_writable_triple)
+	be_writable_triple.oninit = _oninit=>(oninit = _oninit, be_writable_triple)
 	return be_writable_triple
 }

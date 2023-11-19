@@ -1,8 +1,8 @@
 import { writable } from 'svelte/store'
 import { mix_set_readable_ } from '../mix_set_readable_/index.js'
-/** @typedef {import('svelte/store').Writable}Writable */
-/** @typedef {import('../_types/index.d.ts').StartStopNotifier}StartStopNotifier */
-/** @typedef {import('./index.d.ts').Writable_}Writable_ */
+/** @typedef {import('svelte/store').Writable} */
+/** @typedef {import('../_types/index.d.ts').StartStopNotifier} */
+/** @typedef {import('./index.d.ts').Writable_} */
 /**
  * @param {unknown}value
  * @param {StartStopNotifier}[start]

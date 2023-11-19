@@ -1,8 +1,8 @@
 import { mix_set_readable } from '../mix_set_readable/index.js'
 import { writable_fn_ } from '../writable_fn_/index.js'
-/** @typedef {import('svelte/store').Readable}Readable */
-/** @typedef {import('../writable').Writable_set_T}Writable_set_T */
-/** @typedef {import('./index.d.ts').mix_set_readable_T}mix_set_readable_T */
+/** @typedef {import('svelte/store').Readable} */
+/** @typedef {import('../writable').Writable_set_T} */
+/** @typedef {import('./index.d.ts').mix_set_readable_T} */
 /**
  * @param {Readable}store
  * @param {Writable_set_T}[set]

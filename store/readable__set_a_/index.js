@@ -1,8 +1,8 @@
 import { readable } from 'svelte/store'
 import { mix_readable_ } from '../readable_/index.js'
 import { readable_set_a_ } from '../readable_set_a_/index.js'
-/** @typedef {import('svelte/store').Readable}Readable */
-/** @typedef {import('../readable_set_a_').readable_set_a__set_T}readable_set_a__set_T */
+/** @typedef {import('svelte/store').Readable} */
+/** @typedef {import('../readable_set_a_').readable_set_a__set_T} */
 /**
  * @param {unknown}initial
  * @param {typeof readable}[readable_]

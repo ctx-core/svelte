@@ -1,6 +1,6 @@
 import { get } from 'svelte/store'
-/** @typedef {import('svelte/store').Readable}Readable */
-/** @typedef {import('../readable_').Readable_}Readable_ */
+/** @typedef {import('svelte/store').Readable} */
+/** @typedef {import('../readable_').Readable_} */
 /**
  * @param {import('svelte/store').Readable}atom
  * @param {ProxyHandler<Readable>}[rest]

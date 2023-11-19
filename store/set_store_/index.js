@@ -1,6 +1,6 @@
 import { set } from '../set/index.js'
-/** @typedef {import('svelte/store').Writable}Writable */
-/** @typedef {import('./index.d.ts').set_store_T}set_store_T */
+/** @typedef {import('svelte/store').Writable} */
+/** @typedef {import('./index.d.ts').set_store_T} */
 /**
  * Returns a function to set the given store using the value returned by `setter`.
  * This is useful in conjunction with [subscribe](#subscribe).

@@ -1,6 +1,6 @@
 import { subscribe_wait } from '../subscribe_wait/index.js'
-/** @typedef {import('svelte/store').Readable}Readable */
-/** @typedef {import('./index.d.ts').subscribe_wait__condition_fn_T}subscribe_wait__condition_fn_T */
+/** @typedef {import('svelte/store').Readable} */
+/** @typedef {import('./index.d.ts').subscribe_wait__condition_fn_T} */
 /**
  * @param {Readable}store
  * @param {subscribe_wait__condition_fn_T}condition_fn

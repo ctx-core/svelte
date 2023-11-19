@@ -1,7 +1,7 @@
 import { readable } from 'svelte/store'
 import { readable_fn_ } from '../readable_fn_/index.js'
-/** @typedef {import('../_types/index.d.ts').StartStopNotifier}StartStopNotifier */
-/** @typedef {import('../readable').Readable}Readable */
+/** @typedef {import('../_types/index.d.ts').StartStopNotifier} */
+/** @typedef {import('../readable').Readable} */
 /**
  * @param {unknown}value
  * @param {StartStopNotifier}start

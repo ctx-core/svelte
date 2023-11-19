@@ -1,6 +1,6 @@
 import { get } from 'svelte/store'
-/** @typedef {import('svelte/store').Writable}Writable */
-/** @typedef {import('../writable_').Writable_}Writable_ */
+/** @typedef {import('svelte/store').Writable} */
+/** @typedef {import('../writable_').Writable_} */
 /**
  * @param {Writable}writable
  * @returns {Writable_}

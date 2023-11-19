@@ -11,7 +11,7 @@ export function be_readable_pair_(readable__new) {
 	const be_readable_pair = [
 		be_(ctx=>{
 			let readable = readable__new(ctx)
-			oninit?.(readable)
+			oninit?.(ctx, readable)
 			return readable
 		}),
 		ctx=>be_readable_pair[0](ctx)(),
@@ -19,8 +19,8 @@ export function be_readable_pair_(readable__new) {
 			be_readable_pair[0](ctx).set(val)
 		},
 	]
-	be_readable_pair.config = config__fn=>(config__fn(be_readable_pair[0]), be_readable_pair)
-	be_readable_pair.oninit__def = _oninit=>(oninit = _oninit, be_readable_pair)
+	be_readable_pair.config = params=>(be_readable_pair[0].config(params), be_readable_pair)
+	be_readable_pair.oninit = _oninit=>(oninit = _oninit, be_readable_pair)
 	return be_readable_pair
 }
 export {

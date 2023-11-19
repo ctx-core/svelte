@@ -1,6 +1,6 @@
 import { get } from '../get/index.js'
 import { readable_ } from '../readable_/index.js'
-/** @typedef {import('svelte/store/index.js').readable}readable */
+/** @typedef {import('svelte/store/index.js').readable} */
 /**
  * @param {unknown}initial
  * @param {typeof readable}[readable_fn]

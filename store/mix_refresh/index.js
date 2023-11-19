@@ -1,8 +1,8 @@
 import { assign } from '@ctx-core/object'
 import { get } from '../get/index.js'
-/** @typedef {import('../_types/index.d.ts').refresh_mixin_T}refresh_mixin_T */
-/** @typedef {import('svelte/store').Readable}Readable */
-/** @typedef {import('svelte/store').Subscriber}Subscriber */
+/** @typedef {import('../_types/index.d.ts').refresh_mixin_T} */
+/** @typedef {import('svelte/store').Readable} */
+/** @typedef {import('svelte/store').Subscriber} */
 /**
  * @param {Readable}readable
  * @param {Subscriber}[set]

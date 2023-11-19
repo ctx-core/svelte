@@ -1,6 +1,6 @@
 import { subscribe } from '../subscribe/index.js'
-/** @typedef {import('svelte/store').Readable}Readable */
-/** @typedef {import('svelte/store').Unsubscriber}Unsubscriber */
+/** @typedef {import('svelte/store').Readable} */
+/** @typedef {import('svelte/store').Unsubscriber} */
 /**
  * Logs (console.debug) changes to a store
  * @param {Readable}store

@@ -1,8 +1,8 @@
 import { each, map } from '@ctx-core/array'
 import { get } from '../get/index.js'
 import { subscribe } from '../subscribe/index.js'
-/** @typedef {import('svelte/store').Unsubscriber}Unsubscriber */
-/** @typedef {import('../readable').Readable}Readable */
+/** @typedef {import('svelte/store').Unsubscriber} */
+/** @typedef {import('../readable').Readable} */
 /**
  * Subscribes to multiple stores. The subscriber fn is called when any of the store_a changes.
  * @param {Readable[]}store_a
