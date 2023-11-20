@@ -1,27 +1,30 @@
 import { be_ } from '@ctx-core/object'
 import { writable_ } from '../writable_/index.js'
+/** @typedef {import('@ctx-core/object').Be} */
+/** @typedef {import('@ctx-core/object').be_config_T} */
+/** @typedef {import('@ctx-core/object').be__val__new_T} */
 /** @typedef {import('@ctx-core/object').Ctx} */
 /** @typedef {import('svelte/store').Writable} */
 /** @typedef {import('./index.d.ts').be_writable_triple_T} */
 /**
- * @param {be__val__new_T<unknown>}val__new
+ * @param {Be<Writable>|be__val__new_T<unknown>}be_OR_val__new
+ * @param {be_config_T}[config]
  * @returns {be_writable_triple_T}
  * @private
  */
-export function be_writable_triple_(val__new) {
-	let oninit
-	const be_writable_triple = [
-		be_(ctx=>{
-			let atom = writable_(val__new(ctx))
-			oninit?.(ctx, atom)
-			return atom
-		}),
-		ctx=>be_writable_triple[0](ctx)(),
+export function be_writable_triple_(be_OR_val__new, config) {
+	/** @type {Be<Writable>} */
+	let be =
+		be_OR_val__new.is_be
+			? be_OR_val__new
+			: be_(
+				ctx=>writable_(be_OR_val__new(ctx)),
+				config)
+	return [
+		be,
+		ctx=>be(ctx)(),
 		(ctx, val)=>{
-			be_writable_triple[0](ctx).set(val)
+			be(ctx).set(val)
 		},
 	]
-	be_writable_triple.config = params=>(be_writable_triple[0].config(params), be_writable_triple)
-	be_writable_triple.oninit = _oninit=>(oninit = _oninit, be_writable_triple)
-	return be_writable_triple
 }
