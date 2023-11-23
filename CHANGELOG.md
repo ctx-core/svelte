@@ -1,5 +1,14 @@
 # @ctx-core/svelte
 
+## 15.0.8
+
+### Patch Changes
+
+- @ctx-core/array: ^27.0.23 -> ^27.0.24
+- @ctx-core/number: ^8.7.23 -> ^8.7.24
+- @ctx-core/function: ^21.22.18 -> ^21.22.19
+- @ctx-core/object: ^31.1.4 -> ^31.1.5
+
 ## 15.0.7
 
 ### Patch Changes
