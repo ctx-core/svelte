@@ -54,7 +54,7 @@
 		"c8": "^8.0.1",
 		"check-dts": "^0.7.2",
 		"locate-character": "^3.0.0",
-		"tsx": "^4.6.1",
+		"tsx": "^4.6.2",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},
