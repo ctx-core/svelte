@@ -1,5 +1,15 @@
 # @ctx-core/svelte
 
+## 15.0.25
+
+### Patch Changes
+
+- @ctx-core/array: ^27.1.0 -> ^27.1.1
+- @ctx-core/function: ^21.23.0 -> ^21.23.1
+- Updated dependencies
+  - @ctx-core/number@8.7.40
+  - @ctx-core/object@31.1.21
+
 ## 15.0.24
 
 ### Patch Changes
