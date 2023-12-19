@@ -1,5 +1,27 @@
 # @ctx-core/svelte
 
+## 16.0.0
+
+### Major Changes
+
+- major: Ctx: + ns:
+
+      exports: + ctx-core/be
+      be_readable_pair_:
+      be_readable_pair_T:
+      be_writable_triple_:
+      be_writable_triple_T:
+      	generics: + ns_T
+      + ∋ ctx-core
+      - ∋ @ctx-core/object
+
+### Patch Changes
+
+- @ctx-core/array@27.1.14
+- @ctx-core/function@21.24.7
+- @ctx-core/number@8.7.53
+- @ctx-core/object@31.1.34
+
 ## 15.0.37
 
 ### Patch Changes
