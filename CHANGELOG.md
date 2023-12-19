@@ -1,5 +1,13 @@
 # @ctx-core/svelte
 
+## 16.0.3
+
+### Patch Changes
+
+- consolidate dependencies
+- Updated dependencies
+  - ctx-core@5.1.0
+
 ## 16.0.2
 
 ### Patch Changes

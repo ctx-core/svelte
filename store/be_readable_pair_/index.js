@@ -1,11 +1,9 @@
-import { be_ } from '@ctx-core/object'
-import { derived_ } from '../derived_'
-/** @typedef {import('@ctx-core/object').Be} */
-/** @typedef {import('@ctx-core/object').be_config_T} */
-/** @typedef {import('@ctx-core/object').be__val__new_T} */
+/// <reference types="ctx-core" />
+/// <reference types="./index.d.ts" />
+import { be_ } from 'ctx-core/be'
+import { derived_ } from '../derived_/index.js'
 /** @typedef {import('svelte/store').Readable} */
 /** @typedef {import('svelte/store').Stores} */
-/** @typedef {import('./index.d.ts').be_readable_pair_T} */
 /**
  *
  * @param {Be<Readable>|Stores}be_OR_stores_

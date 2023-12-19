@@ -1,4 +1,4 @@
-import { be_, ctx__new, type Ctx_wide_T, ns_ctx_, ns_ctx__new } from '@ctx-core/object'
+import { be_, ctx__new, type Ctx_wide_T, ns_ctx_, ns_ctx__new } from 'ctx-core/be'
 import type { Equal, Expect } from 'ctx-core/test'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'

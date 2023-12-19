@@ -1,8 +1,8 @@
-import { assign } from '@ctx-core/object'
+/// <reference types="../writable/index.d.ts" />
+/// <reference types="./index.d.ts" />
+import { assign } from 'ctx-core/object'
 import { get } from '../get/index.js'
 /** @typedef {import('svelte/store').Readable} */
-/** @typedef {import('../writable').Writable_set_T} */
-/** @typedef {import('./index.d.ts').mix_set_readable_I} */
 /**
  * @param {Readable}store
  * @param {Writable_set_T}set

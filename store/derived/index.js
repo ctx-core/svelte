@@ -1,4 +1,7 @@
-import { isArray, tup } from '@ctx-core/array'
+/// <reference types="../types/index.d.ts" />
+/// <reference types="./index.d.ts" />
+import { tup } from 'ctx-core/array'
+import { isArray } from 'ctx-core/function'
 import { derived as in_derived } from 'svelte/store'
 /** @typedef {import('../_types/index.d.ts').Stores} */
 /** @typedef {import('./index.d.ts').set_derived__fn_T} */

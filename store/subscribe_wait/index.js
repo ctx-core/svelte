@@ -1,8 +1,8 @@
-import { promise_timeout } from '@ctx-core/function'
-import { isNumber_ } from '@ctx-core/number'
+/// <reference types="./index.d.ts" />
+import { promise_timeout } from 'ctx-core/function'
+import { isNumber_ } from 'ctx-core/number'
 /** @typedef {import('svelte/store').Readable} */
 /** @typedef {import('svelte/store').Unsubscriber} */
-/** @typedef {import('./index.d.ts').subscribe_wait__condition_fn_T} */
 /**
  * @param {Readable}store
  * @param {subscribe_wait__condition_fn_T}condition_fn

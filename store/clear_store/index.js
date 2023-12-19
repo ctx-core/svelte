@@ -1,4 +1,5 @@
-import { each, wrap_a_ } from '@ctx-core/array'
+import { each } from 'ctx-core/array'
+import { wrap_a_ } from 'ctx-core/function'
 /** @typedef {import('svelte/store').Readable} */
 /**
  * Sets each store with val
