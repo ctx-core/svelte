@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 16.0.32
+
+### Patch Changes
+
+- Stores: + |Readable<Val>[]
+
 ## 16.0.31
 
 ### Patch Changes
