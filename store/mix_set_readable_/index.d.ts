@@ -9,11 +9,11 @@ export declare function mix_set_readable_<
 	set?:Writable_set_T<StoresValues<Store>>
 ):mix_set_readable_T<StoresValues<Store>>
 export interface mix_set_readable_T<
-	Val extends unknown = unknown
+	Val = unknown
 > extends mix_set_readable_I<Val> {
 	$:Val
 	_:Val
 }
 export type mix_set_readable__I<
-	Val extends unknown = unknown
+	Val = unknown
 > = mix_set_readable_T<Val>

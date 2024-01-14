@@ -2,13 +2,13 @@ import type { readable } from '../readable/index.js'
 import type { Readable_ } from '../readable_/index.js'
 import type { readable_set_o_T } from '../readable_set_o_/index.js'
 export declare function readable__set_o_<
-	Val extends unknown = unknown
+	Val = unknown
 >(
 	initial:Val,
 	readable_fn?:typeof readable
 ):readable__set_o__T<Val>
 export interface readable__set_o__T<
-	Val extends unknown = unknown
+	Val = unknown
 > extends readable_set_o_T<Val> {
 	store:Readable_<Val>
 }

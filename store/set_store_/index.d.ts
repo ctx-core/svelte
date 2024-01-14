@@ -11,7 +11,7 @@ export declare function set_store_<
 	setter?:(v:StoresValues<Store>)=>StoresValues<Store>
 ):set_store_T<StoresValues<Store>>
 export declare type set_store_T<
-	Val extends unknown = unknown
+	Val = unknown
 > = (val:Val)=>void
 export {
 	set_store_ as _set_store,

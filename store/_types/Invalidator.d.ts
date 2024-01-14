@@ -1,3 +1,3 @@
 export declare type Invalidator<
-	Val extends unknown = unknown
+	Val = unknown
 > = (value?:Val)=>void

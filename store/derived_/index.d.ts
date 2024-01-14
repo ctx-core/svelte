@@ -3,7 +3,7 @@ import type { derived_in_fn_T } from '../derived/index.js'
 import type { Readable_ } from '../readable_/index.js'
 export declare function derived_<
 	Store extends Stores,
-	Val extends unknown = unknown
+	Val = unknown
 >(
 	stores:Store,
 	in_fn:derived_in_fn_T<Store, Val>,

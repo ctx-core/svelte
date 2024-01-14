@@ -1,7 +1,7 @@
 import type { Readable, Subscriber, Writable } from 'svelte/store'
 import type { refresh_mixin_T } from '../_types/index.js'
 export declare function mix_refresh<
-	Val extends unknown = unknown
+	Val = unknown
 >(
 	readable:Readable<Val>,
 	set?:

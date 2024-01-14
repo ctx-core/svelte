@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 16.0.31
+
+### Patch Changes
+
+- generic types: remove redundant extends unknown
+
 ## 16.0.30
 
 ### Patch Changes

@@ -2,7 +2,7 @@ import type { Readable } from 'svelte/store'
 import { Stores } from './Stores.js'
 export declare type ExtractStoresValues<
 	Store extends Stores,
-	Else extends unknown = unknown
+	Else = unknown
 > = Store extends (Readable<infer Val>)
 	? Val
 	: {

@@ -1,15 +1,15 @@
 import type { Readable, readable, Subscriber } from 'svelte/store'
 export declare function readable_set_o_<
-	Val extends unknown = unknown
+	Val = unknown
 >(
 	initial:Val,
 	readable_fn?:typeof readable
 ):readable_set_o_T<Val>
 export declare type readable_set_o__set_T<
-	Val extends unknown = unknown
+	Val = unknown
 > = Subscriber<Val>
 export interface readable_set_o_T<
-	Val extends unknown = unknown
+	Val = unknown
 > {
 	store:Readable<Val>
 	set:readable_set_o__set_T<Val>
