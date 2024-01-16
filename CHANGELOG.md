@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 16.0.41
+
+### Patch Changes
+
+- ctx-core: ^5.19.0 -> ^5.19.1
+
 ## 16.0.40
 
 ### Patch Changes
