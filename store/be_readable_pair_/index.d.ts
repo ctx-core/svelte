@@ -1,4 +1,4 @@
-import type { Be, be_config_T, Ctx_wide_T } from 'ctx-core/be'
+import type { Be, be_config_arg_a_T, Ctx_wide_T } from 'ctx-core/be'
 import type { Readable, Stores, StoresValues } from 'svelte/store'
 import type { Readable_ } from '../readable_/index.js'
 export declare function be_readable_pair_<
@@ -16,7 +16,7 @@ export declare function be_readable_pair_<
 >(
 	stores_:(ctx:ctx_T)=>stores_T,
 	val__new:(store_values:StoresValues<stores_T>)=>val_T,
-	config?:be_config_T<ns_T>
+	...config:be_config_arg_a_T<ns_T>
 ):be_readable_pair_T<val_T, ns_T, readable_T, ctx_T>
 export {
 	be_readable_pair_ as be_derived_pair_

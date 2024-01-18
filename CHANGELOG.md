@@ -1,5 +1,13 @@
 # @ctx-core/svelte
 
+## 16.0.51
+
+### Patch Changes
+
+- be*writable_triple*,be*readable_pair*: arguments: config:
+
+      required when ns is defined
+
 ## 16.0.50
 
 ### Patch Changes
