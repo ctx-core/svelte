@@ -1,5 +1,11 @@
 # @ctx-core/svelte
 
+## 16.0.50
+
+### Patch Changes
+
+- fix: type errors
+
 ## 16.0.49
 
 ### Patch Changes
