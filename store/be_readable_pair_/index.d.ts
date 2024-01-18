@@ -1,4 +1,4 @@
-import type { Be, be_config_T, Ctx, Ctx_wide_T } from 'ctx-core/be'
+import type { Be, be_config_T, Ctx_wide_T } from 'ctx-core/be'
 import type { Readable, Stores, StoresValues } from 'svelte/store'
 import type { Readable_ } from '../readable_/index.js'
 export declare function be_readable_pair_<

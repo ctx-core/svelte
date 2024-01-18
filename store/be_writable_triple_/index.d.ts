@@ -1,4 +1,4 @@
-import type { Be, be_config_T, Ctx, ctx__be_T, ctx__get_T, ctx__set_T, Ctx_wide_T } from 'ctx-core/be'
+import type { Be, be_config_T, ctx__be_T, ctx__get_T, ctx__set_T, Ctx_wide_T } from 'ctx-core/be'
 import type { Writable } from 'svelte/store'
 import type { Writable_ } from '../writable_/index.js'
 export declare function be_writable_triple_<

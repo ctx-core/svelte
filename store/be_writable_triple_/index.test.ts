@@ -27,7 +27,7 @@ test('be_writable_triple_|+id|+ns', ()=>{
 		foobar$_,
 		foobar_,
 		foobar__set,
-	] = be_writable_triple_(ctx=>{
+	] = be_writable_triple_<number, 'test_ns'>(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
 		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */

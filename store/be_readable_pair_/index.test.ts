@@ -38,7 +38,7 @@ test('be_readable_pair_|+id|+ns', ()=>{
 	const [
 		foobar$_,
 		foobar_,
-	] = be_readable_pair_(
+	] = be_readable_pair_<number, 'test_ns'>(
 		ctx=>{
 			/* eslint-disable @typescript-eslint/no-unused-vars */
 			type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
@@ -65,7 +65,7 @@ test('be_readable_pair_|be', ()=>{
 		base$_,
 		,
 		base__set,
-	] = be_writable_triple_(ctx=>{
+	] = be_writable_triple_<number, 'test_ns'>(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
 		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
@@ -74,7 +74,7 @@ test('be_readable_pair_|be', ()=>{
 	const [
 		foobar$_,
 		foobar_,
-	] = be_readable_pair_(be_(ctx=>{
+	] = be_readable_pair_<number, 'test_ns', custom_T>(be_(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
 		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
