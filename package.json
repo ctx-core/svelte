@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "16.0.69",
+	"version": "16.0.70",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -45,7 +45,7 @@
 		"test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"ctx-core": "^5.33.0",
+		"ctx-core": "^5.34.0",
 		"svelte": "^4.2.9"
 	},
 	"devDependencies": {
