@@ -1,4 +1,4 @@
-import { be_, ctx__new, type Ctx_wide_T, ns_ctx__new } from 'ctx-core/be'
+import { be_, ctx__new, type wide_ctx_T, ns_ctx__new } from 'ctx-core/be'
 import type { Equal, Expect } from 'ctx-core/test'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
@@ -16,7 +16,7 @@ test('be_readable_pair_', ()=>{
 	] = be_readable_pair_(
 		ctx=>{
 			/* eslint-disable @typescript-eslint/no-unused-vars */
-			type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<''>>>
+			type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<''>>>
 			/* eslint-enable @typescript-eslint/no-unused-vars */
 			return base$_(ctx)
 		}, base=>base + 1)
@@ -41,7 +41,7 @@ test('be_readable_pair_|+id|+ns', ()=>{
 	] = be_readable_pair_<number, 'test_ns'>(
 		ctx=>{
 			/* eslint-disable @typescript-eslint/no-unused-vars */
-			type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
+			type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 			/* eslint-enable @typescript-eslint/no-unused-vars */
 			return base$_(ctx)
 		},
@@ -67,7 +67,7 @@ test('be_readable_pair_|be', ()=>{
 		base__set,
 	] = be_writable_triple_<number, 'test_ns'>(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		return 1
 	}, { ns: 'test_ns' })
@@ -76,7 +76,7 @@ test('be_readable_pair_|be', ()=>{
 		foobar_,
 	] = be_readable_pair_<number, 'test_ns', custom_T>(be_(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		const foobar$ = derived_(base$_(ctx), base=>base + 1) as custom_T
 		foobar$.custom = 'custom-val'

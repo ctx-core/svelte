@@ -1,4 +1,4 @@
-import { be_, ctx__new, type Ctx_wide_T, ns_ctx_, ns_ctx__new } from 'ctx-core/be'
+import { be_, ctx__new, type wide_ctx_T, ns_ctx_, ns_ctx__new } from 'ctx-core/be'
 import type { Equal, Expect } from 'ctx-core/test'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
@@ -11,7 +11,7 @@ test('be_writable_triple_', ()=>{
 		foobar__set,
 	] = be_writable_triple_(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<''>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<''>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		return 1
 	})
@@ -29,7 +29,7 @@ test('be_writable_triple_|+id|+ns', ()=>{
 		foobar__set,
 	] = be_writable_triple_<number, 'test_ns'>(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		return 1
 	}, { id: 'foobar', ns: 'test_ns' })
@@ -53,7 +53,7 @@ test('be_writable_triple_|be', ()=>{
 		foobar__set,
 	] = be_writable_triple_<number, 'test_ns', custom_T>(be_(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		const foobar$ = writable_(1) as custom_T
 		foobar$.custom = 'custom-val'
