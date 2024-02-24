@@ -1,5 +1,13 @@
 # @ctx-core/svelte
 
+## 16.0.95
+
+### Patch Changes
+
+- svelte: ^4.2.11 -> ^4.2.12
+- Updated dependencies
+  - ctx-core@6.4.5
+
 ## 16.0.94
 
 ### Patch Changes
