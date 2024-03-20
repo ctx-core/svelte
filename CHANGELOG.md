@@ -1,5 +1,13 @@
 # @ctx-core/svelte
 
+## 16.0.109
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+
 ## 16.0.108
 
 ### Patch Changes
