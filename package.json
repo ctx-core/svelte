@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/svelte",
-	"version": "16.0.127",
+	"version": "16.0.128",
 	"description": "ctx-core svelte",
 	"keywords": [
 		"ctx-core",
@@ -50,7 +50,7 @@
 	},
 	"dependencies": {
 		"ctx-core": "^7.1.5",
-		"svelte": "^4.2.13"
+		"svelte": "^4.2.14"
 	},
 	"devDependencies": {
 		"c8": "^9.1.0",
