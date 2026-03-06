@@ -1,5 +1,13 @@
 # @ctx-core/svelte
 
+## 16.0.164
+
+### Patch Changes
+
+- chore: migrate scripts from pnpm to bun
+- Updated dependencies
+  - ctx-core@7.2.34
+
 ## 16.0.163
 
 ### Patch Changes
